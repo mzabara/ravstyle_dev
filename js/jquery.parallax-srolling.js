@@ -12,7 +12,7 @@
 $(document).ready(function(){
 
     // Cache the Window object
-    $window = $(window);
+    $window = $("#wrapper");
 
     // Cache the Y offset and the speed of each sprite
     $('[data-type]').each(function() {
@@ -22,7 +22,7 @@ $(document).ready(function(){
     });
 
     // For each element that has a data-type attribute
-    $('section[data-type="background"]').each(function(){
+    $('article[data-type="background"]').each(function(){
 
 
         // Store some variables based on where we are
@@ -31,7 +31,7 @@ $(document).ready(function(){
             topOffset = offsetCoords.top;
 
         // When the window is scrolled...
-        $(window).scroll(function() {
+        $("#wrapper").scroll(function() {
 
             // If this section is in view
             if ( ($window.scrollTop() + $window.height()) > (topOffset) &&
