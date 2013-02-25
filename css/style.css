@@ -14,14 +14,12 @@ body{
 }
 
 #wrapper{
-    min-width: 1024px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     display: block;
     overflow-x: hidden;
+    height: 100%;
+    height: auto !important;
+    height: 100%;
 }
 
 section{
@@ -62,39 +60,39 @@ nav{
     background: #2f3132;
 }
 
-nav:before{
-    position: absolute;
-    left: -10px;
-    z-index: 3;
-    display: block;
-    content: " ";
-    width: 100px;
-    height: 42px;
-    background: #2f3132;
-    border-radius: 5px;
-    -webkit-transform: skew(-10deg, 0);
-    -moz-transform: skew(-10deg, 0);
-    -ms-transform: skewX(-10deg) skewY(0);
-    -o-transform: skew(-10deg, 0);
-    transform: skew(-10deg, 0);
-}
+/*nav:before{*/
+    /*position: absolute;*/
+    /*left: -10px;*/
+    /*z-index: 3;*/
+    /*display: block;*/
+    /*content: " ";*/
+    /*width: 100px;*/
+    /*height: 42px;*/
+    /*background: #2f3132;*/
+    /*border-radius: 5px;*/
+    /*-webkit-transform: skew(-10deg, 0);*/
+    /*-moz-transform: skew(-10deg, 0);*/
+    /*-ms-transform: skewX(-10deg) skewY(0);*/
+    /*-o-transform: skew(-10deg, 0);*/
+    /*transform: skew(-10deg, 0);*/
+/*}*/
 
-nav:after{
-    position: absolute;
-    right: -10px;
-    z-index: 3;
-    display: block;
-    content: " ";
-    width: 100px;
-    height: 42px;
-    background: #2f3132;
-    border-radius: 5px;
-    -webkit-transform: skew(-10deg, 0);
-    -moz-transform: skew(-10deg, 0);
-    -ms-transform: skewX(-10deg) skewY(0);
-    -o-transform: skew(-10deg, 0);
-    transform: skew(-10deg, 0);
-}
+/*nav:after{*/
+    /*position: absolute;*/
+    /*right: -10px;*/
+    /*z-index: 3;*/
+    /*display: block;*/
+    /*content: " ";*/
+    /*width: 100px;*/
+    /*height: 42px;*/
+    /*background: #2f3132;*/
+    /*border-radius: 5px;*/
+    /*-webkit-transform: skew(-10deg, 0);*/
+    /*-moz-transform: skew(-10deg, 0);*/
+    /*-ms-transform: skewX(-10deg) skewY(0);*/
+    /*-o-transform: skew(-10deg, 0);*/
+    /*transform: skew(-10deg, 0);*/
+/*}*/
 
 .nav{
     padding: 0;
