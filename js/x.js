@@ -3,8 +3,8 @@
  * Author: Richard Shepherd
  */
 
-function setupParallax() {
-    $window = $("#wrapper");
+$(document).ready(function() {
+    var $window = $("#wrapper");
     $("[data-type]").each(function () {
         $(this).data("offsetY", parseInt($(this).attr("data-offsetY")));
         $(this).data("Xposition", $(this).attr("data-Xposition"));
@@ -36,5 +36,5 @@ function setupParallax() {
                 })
             }
         })
-    })
-}
+    });
+});
