@@ -67,7 +67,10 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $('.nav').localScroll(500);
+        $('.nav').localScroll({
+            target: '#wrapper',
+            duration: 500
+        });
     })
 </script>
 
