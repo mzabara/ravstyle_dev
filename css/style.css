@@ -128,32 +128,35 @@ nav:after{
 
 #index .light-1{
     position: absolute;
-    bottom: 10%;
-    left: 10%;
-    width: 249px;
-    height: 249px;
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
     z-index: 3;
-    background: url("../images/parallax/index-1.png") 0 0 no-repeat;
+    background-image: url("../images/parallax/index-1.png");
+    background-repeat: no-repeat;
 }
 
 #index .light-2{
     position: absolute;
-    top: 70%;
-    right: 2%;
-    width: 197px;
-    height: 198px;
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
     z-index: 3;
-    background: url("../images/parallax/index-2.png") 0 0 no-repeat;
+    background-image: url("../images/parallax/index-2.png");
+    background-repeat: no-repeat;
 }
 
 #index .light-3{
     position: absolute;
-    top: 10%;
-    left: 45%;
-    width: 62px;
-    height: 62px;
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
     z-index: 3;
-    background: url("../images/parallax/index-3.png") 0 0 no-repeat;
+    background-image: url("../images/parallax/index-3.png");
+    background-repeat: no-repeat;
 }
 
 #wedding{
