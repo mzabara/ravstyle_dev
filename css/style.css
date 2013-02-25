@@ -135,6 +135,7 @@ nav:after{
     z-index: 3;
     background-image: url("../images/parallax/index-1.png");
     background-repeat: no-repeat;
+    background-position: 20% 720px;
 }
 
 #index .light-2{
@@ -146,6 +147,7 @@ nav:after{
     z-index: 3;
     background-image: url("../images/parallax/index-2.png");
     background-repeat: no-repeat;
+    background-position: 10% 690px;
 }
 
 #index .light-3{
@@ -157,6 +159,7 @@ nav:after{
     z-index: 3;
     background-image: url("../images/parallax/index-3.png");
     background-repeat: no-repeat;
+    background-position: 80% 820px;
 }
 
 #wedding{
