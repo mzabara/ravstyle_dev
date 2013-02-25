@@ -126,6 +126,14 @@ nav:after{
     background-color: #630400;
 }
 
+#index .light-1{
+    position: absolute;
+    width: 249px;
+    height: 249px;
+    z-index: 3;
+    background: url("../images/parallax/index-1.png") 0 0 no-repeat;
+}
+
 #wedding{
     background-image: url(../images/wedding.jpg);
     background-color: #ffffff;
