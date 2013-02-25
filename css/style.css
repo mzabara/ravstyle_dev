@@ -136,6 +136,26 @@ nav:after{
     background: url("../images/parallax/index-1.png") 0 0 no-repeat;
 }
 
+#index .light-2{
+    position: absolute;
+    top: 70%;
+    right: 2%;
+    width: 197px;
+    height: 198px;
+    z-index: 3;
+    background: url("../images/parallax/index-2.png") 0 0 no-repeat;
+}
+
+#index .light-3{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    width: 62px;
+    height: 62px;
+    z-index: 3;
+    background: url("../images/parallax/index-3.png") 0 0 no-repeat;
+}
+
 #wedding{
     background-image: url(../images/wedding.jpg);
     background-color: #ffffff;
