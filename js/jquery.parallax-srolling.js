@@ -120,6 +120,20 @@ $(document).ready(function(){
 
                 }); // video
 
+                $('[data-type="element"]', $self).each(function() {
+
+                    // Cache the video
+                    var $video = $(this);
+
+                    // There's some repetition going on here, so
+                    // feel free to tidy this section up.
+                    var yPos = -($window.scrollTop() / $video.data('speed'));
+                    var coords = (yPos + $video.data('offsetY')) + 'px';
+
+                    $video.css({ top: coords });
+
+                }); // video
+
             }; // in view
 
         }); // window scroll
