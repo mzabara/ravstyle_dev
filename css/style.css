@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'RBNaftalin';
+    src: url('../font/naftalin.eot');
+    src: url('../font/naftalin.eot.eot?#iefix') format('embedded-opentype'), url('../font/naftalin.woff.woff') format('woff'), url('../font/naftalin.ttf.ttf') format('truetype');
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -9,21 +15,13 @@ html, body {
 
 body{
     font-size: 14px;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     font-family: 'PT Sans', sans-serif;
-}
-
-#wrapper{
-    position: relative;
-    display: block;
-    overflow-x: hidden;
-    height: 100%;
-    height: auto !important;
-    height: 100%;
 }
 
 section{
     position: relative;
+    display: block;
     background-attachment: fixed;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -32,16 +30,34 @@ section{
     min-height: 100%;
     height: auto !important;
     height: 100%;
+    z-index: 1;
+}
+
+article{
+   position: relative;
+    display: block;
+    z-index: 4;
+    width: 768px;
+    padding: 8% 0 0 7%;
+}
+
+
+img {
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
 .logotyp{
-    position: absolute;
+    position: fixed;
     top:2%;
     left: 2%;
     width: 87px;
     height: 146px;
     background-position: 0 0;
     background-repeat: no-repeat;
+    z-index: 100;
 }
 
 #index .logotyp{
@@ -55,104 +71,134 @@ section{
 nav{
     position: fixed;
     top:6%;
-    left: 9%;
+    left: 10%;
     z-index: 100;
     background: #2f3132;
 }
 
-/*nav:before{*/
-    /*position: absolute;*/
-    /*left: -10px;*/
-    /*z-index: 3;*/
-    /*display: block;*/
-    /*content: " ";*/
-    /*width: 100px;*/
-    /*height: 42px;*/
-    /*background: #2f3132;*/
-    /*border-radius: 5px;*/
-    /*-webkit-transform: skew(-10deg, 0);*/
-    /*-moz-transform: skew(-10deg, 0);*/
-    /*-ms-transform: skewX(-10deg) skewY(0);*/
-    /*-o-transform: skew(-10deg, 0);*/
-    /*transform: skew(-10deg, 0);*/
-/*}*/
+nav:before{
+    position: absolute;
+    top: 0;
+    left: -10px;
+    z-index: 3;
+    display: block;
+    content: " ";
+    width: 100px;
+    height: 44px;
+    background: #2f3132;
+    border-radius: 5px;
+    -webkit-transform: skew(-10deg, 0);
+    -moz-transform: skew(-10deg, 0);
+    -ms-transform: skewX(-10deg) skewY(0);
+    -o-transform: skew(-10deg, 0);
+    transform: skew(-10deg, 0);
+}
 
-/*nav:after{*/
-    /*position: absolute;*/
-    /*right: -10px;*/
-    /*z-index: 3;*/
-    /*display: block;*/
-    /*content: " ";*/
-    /*width: 100px;*/
-    /*height: 42px;*/
-    /*background: #2f3132;*/
-    /*border-radius: 5px;*/
-    /*-webkit-transform: skew(-10deg, 0);*/
-    /*-moz-transform: skew(-10deg, 0);*/
-    /*-ms-transform: skewX(-10deg) skewY(0);*/
-    /*-o-transform: skew(-10deg, 0);*/
-    /*transform: skew(-10deg, 0);*/
-/*}*/
+nav:after{
+    position: absolute;
+    top: 0;
+    right: -10px;
+    z-index: 3;
+    display: block;
+    content: " ";
+    width: 100px;
+    height: 44px;
+    background: #2f3132;
+    border-radius: 5px;
+    -webkit-transform: skew(-10deg, 0);
+    -moz-transform: skew(-10deg, 0);
+    -ms-transform: skewX(-10deg) skewY(0);
+    -o-transform: skew(-10deg, 0);
+    transform: skew(-10deg, 0);
+}
 
-.nav{
+.navigation{
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
-.nav li{
+.navigation li{
     float: left;
 }
 
-.nav li a{
+.navigation li a{
     position: relative;
     display: block;
-    padding: 12px 14px;
+    margin: 2px 0;
+    padding:10px 12px;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 100%;
+    font-size: 86%;
     z-index: 5;
 }
 
+.navigation .active a{
+    background: #8c1209;
+}
+
+.navigation .active a:before{
+    position: absolute;
+    top: 0;
+    left: -7px;
+    z-index: 3;
+    display: block;
+    content: " ";
+    width: 15px;
+    height: 40px;
+    background: #8c1209;
+    border-radius: 5px;
+    -webkit-transform: skew(-10deg, 0);
+    -moz-transform: skew(-10deg, 0);
+    -ms-transform: skewX(-10deg) skewY(0);
+    -o-transform: skew(-10deg, 0);
+    transform: skew(-10deg, 0);
+}
+
+.navigation .active a:after{
+    position: absolute;
+    top: 0;
+    right: -7px;
+    z-index: 3;
+    display: block;
+    content: " ";
+    width: 15px;
+    height: 40px;
+    background: #8c1209;
+    border-radius: 5px;
+    -webkit-transform: skew(-10deg, 0);
+    -moz-transform: skew(-10deg, 0);
+    -ms-transform: skewX(-10deg) skewY(0);
+    -o-transform: skew(-10deg, 0);
+    transform: skew(-10deg, 0);
+}
+
+.parallax {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    z-index: 3;
+    background-repeat: no-repeat;
+}
+
+.element {
+    position: absolute;
+    z-index: 3;
+}
 
 #index{
     background-image: url(../images/index.jpg);
     background-color: #630400;
 }
 
-#index .light-1{
+.intro-text{
     position: absolute;
-    width: 100%;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    z-index: 3;
-    background-image: url("../images/parallax/index-1.png");
-    background-repeat: no-repeat;
+    top: 50%;
 }
 
-#index .light-2{
-    position: absolute;
-    width: 100%;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    z-index: 3;
-    background-image: url("../images/parallax/index-2.png");
-    background-repeat: no-repeat;
-}
-
-#index .light-3{
-    position: absolute;
-    width: 100%;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    z-index: 3;
-    background-image: url("../images/parallax/index-3.png");
-    background-repeat: no-repeat;
-}
 
 #wedding{
     background-image: url(../images/wedding.jpg);
@@ -177,4 +223,28 @@ nav{
 #contacts{
     background-image: url(../images/contact.jpg);
     background-color: #000009;
+}
+
+/*      PARALLAX        */
+
+.light-1{
+    top:443px;
+    left: 20px;
+    width: 249px;
+    height: 249px;
+}
+
+.light-2{
+    top:550px;
+    left: 10%;
+    width: 197px;
+    height: 199px;
+}
+
+.light-3{
+    background-image: url("../images/parallax/index-3.png");
+}
+
+.cost-1{
+    background-image: url("../images/parallax/cost-1.png");
 }
