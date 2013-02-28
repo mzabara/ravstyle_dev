@@ -220,7 +220,7 @@ nav:after{
 /*      PARALLAX        */
 
 .light-1{
-    top:443px;
+    top:50%!important;
     left: 20px;
     width: 249px;
     height: 249px;
