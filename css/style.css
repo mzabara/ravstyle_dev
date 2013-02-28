@@ -60,14 +60,6 @@ img {
     z-index: 100;
 }
 
-#index .logotyp{
-    background-image: url(../images/dark-logo.png);
-}
-
-#contacts .logotyp{
-    background-image: url(../images/light-logo.png);
-}
-
 nav{
     position: fixed;
     top:6%;
