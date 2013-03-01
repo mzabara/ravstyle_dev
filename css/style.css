@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'RBNaftalin';
     src: url('../font/naftalin.eot');
-    src: url('../font/naftalin.eot.eot?#iefix') format('embedded-opentype'), url('../font/naftalin.woff.woff') format('woff'), url('../font/naftalin.ttf.ttf') format('truetype');
+    src: url('../font/naftalin.eot.eot?#iefix') format('embedded-opentype'), url('../font/naftalin.woff') format('woff'), url('../font/naftalin.ttf') format('truetype');
 }
 
 html, body {
@@ -31,16 +31,8 @@ section{
     height: auto !important;
     height: 100%;
     z-index: 1;
+    overflow: hidden;
 }
-
-article{
-   position: relative;
-    display: block;
-    z-index: 4;
-    width: 768px;
-    padding: 8% 0 0 7%;
-}
-
 
 img {
     width: auto\9;
@@ -51,20 +43,31 @@ img {
 
 .logotyp{
     position: fixed;
-    top:2%;
-    left: 2%;
+    top:1%;
+    left: 1%;
     width: 87px;
     height: 146px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    z-index: 100;
+    z-index: 10;
+}
+
+footer{
+    position: fixed;
+    bottom:2%;
+    left: 0;
+    padding-top: 7px;
+    width: 152px;
+    height: 32px;
+    background: url("../images/footer-bg.png") no-repeat 0 0;
+    color: #8a897a;
+    text-align: center;
+    z-index: 10;
 }
 
 nav{
     position: fixed;
-    top:6%;
-    left: 10%;
-    z-index: 100;
+    top:3%;
+    left: 150px;
+    z-index: 10;
     background: #2f3132;
 }
 
@@ -172,7 +175,7 @@ nav:after{
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    z-index: 3;
+    z-index: 2;
     background-repeat: no-repeat;
 }
 
@@ -186,9 +189,31 @@ nav:after{
     background-color: #630400;
 }
 
-.intro-text{
-    position: absolute;
-    top: 50%;
+.intro{
+    left: 8%;
+    width: 710px;
+    height: 333px;
+    padding: 50px 0 0 0;
+    background: url("../images/parallax/intro.png") 0 0 no-repeat;
+    font-family: 'RBNaftalin';
+    line-height: 80px;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+.f30{
+    font-size: 30px;
+}
+
+.f90{
+    font-size: 90px;
+}
+
+.f20{
+    font-size: 20px;
+}
+
+.f15{
+    font-size: 15px;
 }
 
 
@@ -202,6 +227,73 @@ nav:after{
     background-color: #be65a9;
 }
 
+#style .slide{
+    position: absolute;
+    z-index: 3;
+    width: 25%;
+    min-height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 0;
+    -webkit-box-shadow: 0 0 20px rgba(116, 7, 89, 0.4);
+    box-shadow: 0 0 20px rgba(116, 7, 89, 0.4);
+}
+
+#style .slide .tint{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+#style .label{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 242px;
+    padding: 15px;
+    background: url("../images/style-label-bg.png") #b41212 0 0;
+    color: #ffffff;
+    font-family: 'RBNaftalin';
+    text-transform: uppercase;
+    z-index: 7;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#style .evening-makeup{
+    top:0;
+    left: 0;
+    background-image: url("../images/style-1off.jpg");
+    z-index: 5;
+}
+
+#style .evening-makeup .tint{
+    background-image: url("../images/style-1.jpg");
+}
+
+#style .day-makeup{
+    top:0;
+    left: 25%;
+    background-image: url("../images/style-2off.jpg");
+    z-index: 4;
+}
+
+#style .holiday-makeup{
+    top:0;
+    left: 50%;
+    background-image: url("../images/style-3off.jpg");
+}
+
+#style .stylized-makeup{
+    top:0;
+    left: 75%;
+    background-image: url("../images/style-4off.jpg");
+    z-index: 2;
+}
+
 #creative{
     background-image: url(../images/creative.jpg);
     background-color: #d7cb3a;
@@ -212,6 +304,60 @@ nav:after{
     background-color: #6c4693;
 }
 
+#cost .container{
+    position: relative;
+    margin-top: 6%;
+    background: url("../images/contact-bg.png") 0 0 repeat;
+    padding:0 25px 15px 25px;
+    border-radius: 10px;
+    color: #ffffff;
+    z-index: 5;
+}
+
+#cost .page-header{
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+}
+
+#cost .page-header h1{
+    font-family: 'RBNaftalin';
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-size: 300%;
+    text-align: center;
+    line-height: 100px;
+}
+
+#cost .page-header h1 .left-shape{
+    position: relative;
+    display: inline-block;
+    background: url("../images/cost-left-shape.png") 0 0 no-repeat;
+    width: 36px;
+    height: 43px;
+    top: 7px;
+}
+
+#cost .page-header h1 .right-shape{
+    position: relative;
+    display: inline-block;
+    background: url("../images/cost-right-shape.png") 0 0 no-repeat;
+    width: 36px;
+    height: 43px;
+    top: 7px;
+}
+
+#cost .table{
+    padding: 0;
+    margin: 0 0 15px 0;
+    font-size: 120%;
+}
+
+#cost .table td{
+    padding: 6px;
+}
+
 #contacts{
     background-image: url(../images/contact.jpg);
     background-color: #000009;
@@ -220,23 +366,123 @@ nav:after{
 /*      PARALLAX        */
 
 .light-1{
-    top:443px;
-    left: 20px;
+    left: 530px;
     width: 249px;
     height: 249px;
 }
 
 .light-2{
-    top:550px;
-    left: 10%;
+    left: 192px;
     width: 197px;
     height: 199px;
 }
 
 .light-3{
-    background-image: url("../images/parallax/index-3.png");
+    left: 450px;
+    width: 62px;
+    height: 62px;
+}
+
+.light-4{
+    left: 600px;
+    width: 102px;
+    height: 103px;
+}
+
+.wedding-1{
+    right: 100px;
+    width: 220px;
+    height: 147px;
+}
+
+.wedding-2{
+    right: 720px;
+    width: 111px;
+    height: 93px;
+}
+
+.wedding-3{
+    right: 720px;
+    width: 303px;
+    height: 212px;
+}
+
+.creative-1{
+    right: 250px;
+    width: 129px;
+    height: 268px;
+}
+
+.creative-2{
+    left: 65px;
+    width: 146px;
+    height: 120px;
+}
+
+.creative-3{
+    left: 940px;
+    width: 332px;
+    height: 187px;
+}
+
+.creative-4{
+    left: 100px;
+    width: 238px;
+    height: 502px;
 }
 
 .cost-1{
-    background-image: url("../images/parallax/cost-1.png");
+    top:750px;
+    left: 190px;
+    width: 280px;
+    height: 285px;
+}
+
+.cost-2{
+    right: 10px;
+    width: 355px;
+    height: 377px;
+}
+
+.cost-3{
+    left: 100px;
+    width: 143px;
+    height: 168px;
+}
+
+.contact-info{
+    font-family: 'RBNaftalin';
+    color: #ffffff;
+    left: 170px;
+    padding: 20px 30px;
+    line-height: 50px;
+    background: url("../images/contact-bg.png") 0 0 repeat;
+    border-radius: 10px;
+}
+
+.contact-info a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.contact-info a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-info h1{
+    font-size: 50px;
+    background: url("../images/two-line.png") 0 100% repeat-x;
+    padding-bottom: 35px;
+}
+
+.contact-info p{
+    font-size: 25px;
+}
+
+.contact-info i {
+    float: left;
+    margin-top: 5px;
+    margin-right: 15px;
+    font-size: 30px;
 }
