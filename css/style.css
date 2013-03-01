@@ -239,7 +239,7 @@ nav:after{
     box-shadow: 0 0 20px rgba(116, 7, 89, 0.4);
 }
 
-#style .slide .tint{
+#style .slide .color-image{
     position: absolute;
     z-index: 3;
     width: 100%;
@@ -270,7 +270,7 @@ nav:after{
     z-index: 5;
 }
 
-#style .evening-makeup .tint{
+#style .evening-makeup .color-image{
     background-image: url("../images/style-1.jpg");
 }
 
@@ -281,10 +281,18 @@ nav:after{
     z-index: 4;
 }
 
+#style .day-makeup .color-image{
+    background-image: url("../images/style-2.jpg");
+}
+
 #style .holiday-makeup{
     top:0;
     left: 50%;
     background-image: url("../images/style-3off.jpg");
+}
+
+#style .holiday-makeup .color-image{
+    background-image: url("../images/style-3.jpg");
 }
 
 #style .stylized-makeup{
@@ -292,6 +300,10 @@ nav:after{
     left: 75%;
     background-image: url("../images/style-4off.jpg");
     z-index: 2;
+}
+
+#style .stylized-makeup .color-image{
+    background-image: url("../images/style-4.jpg");
 }
 
 #creative{
