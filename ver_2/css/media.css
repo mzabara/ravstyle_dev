@@ -1,0 +1,11 @@
+.media-max-width-1024 #first .intro{
+    left: 70px;
+}
+
+.media-max-width-1024 #fourth .slide{
+    left: 130px;
+}
+
+.media-max-width-768 #first .intro{
+    left: 20px;
+}
