@@ -223,8 +223,9 @@ footer{
     background-size: cover;
 }
 
-/* HOME */
-
+/***********************************************************************
+/* Main
+***********************************************************************/
 
 #first {
     background: url('../images/index.jpg') 50% 0 no-repeat fixed;
@@ -239,4 +240,102 @@ footer{
     z-index: 2;
 }
 
-#first .bolla1 {height:352px; width:357px; max-width:1920px; position:absolute; z-index:6; top:420px; left:20px;}
+#first .light-1 {
+    height: 249px;
+    width: 249px;
+    max-width: 1920px;
+    position: absolute;
+    z-index: 6;
+    top: 420px;
+    left: 20px;
+}
+
+#first .light-2 {
+    height: 197px;
+    width: 198px;
+    max-width: 1920px;
+    position: absolute;
+    z-index: 6;
+    top: 290px;
+    left: 128px;
+}
+
+/***********************************************************************
+/* Wedding
+***********************************************************************/
+
+#second {
+    background: url('../images/wedding.jpg') 50% 0 no-repeat fixed;
+    height: 1100px;
+    z-index: 5;
+    position: relative;
+}
+
+/***********************************************************************
+/* Style
+***********************************************************************/
+
+#third {
+    background: url('../images/style.jpg') 50% 0 no-repeat fixed;
+    height: 1120px;
+    position: relative;
+}
+
+#third > article {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+/***********************************************************************
+/* Creative
+***********************************************************************/
+
+#fourth {
+    background: url('../images/creative.jpg') 50% 0px no-repeat fixed;
+    height: 1130px;
+    z-index: 1;
+    position: relative;
+}
+
+#fourth > article {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
+
+/***********************************************************************
+/* Cost
+***********************************************************************/
+
+#fifth {
+    background: url('../images/cost.jpg') 50% 0px no-repeat fixed;
+    height: 1200px;
+    position: relative;
+}
+
+#fifth > article {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
+
+/***********************************************************************
+/* Contacts
+***********************************************************************/
+
+#sixth {
+    background: url('../images/contact.jpg') 50% 0px no-repeat fixed;
+    height: 1520px;
+    position: relative;
+}
+
+#sixth > article {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
