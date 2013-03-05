@@ -49,6 +49,7 @@ function whichTransitionEvent() {
     }
 };
 
+
 function switchPages(e) {
     var array = new Array();
     $("#wrapper > article").each(function () {
@@ -73,64 +74,9 @@ function switchPages(e) {
         }
 
         //////
-
-        switch (patt1.exec(selector)[0]) {
-            case '01':
-                resetHover();
-                $('<style> #navigation li:hover:not(.selected) {color:#333} #navigation .selected {color:#333} </style>').appendTo('head');
-                $("#menuSection > #li01").addClass("selected").removeClass("allowHover");
-                $('#arrowLi #arrowP01').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                $('#hoverLi #overP01').delay(1000).animate({ opacity : 1 , width : 42 , left : -693 }, 500, 'easeOutElastic');
-                break;
-
-            case '02':
-                resetHover();
-                $('<style> #navigation li:hover:not(.selected) {color:#02627c} #navigation .selected {color:#02627c} </style>').appendTo('head');
-                $("#menuSection > #li02").addClass("selected").removeClass("allowHover");
-                $('#arrowLi #arrowP02').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                $('#hoverLi #overP02').delay(1000).animate({ opacity : 1 , width : 62 , left : -631 }, 500, 'easeOutElastic');
-                break;
-
-            case '03':
-                resetHover();
-                $('<style> #navigation li:hover:not(.selected) {color:#c16d00} #navigation .selected {color:#c16d00} </style>').appendTo('head');
-                $("#menuSection > #li03").addClass("selected").removeClass("allowHover");
-                $('#arrowLi #arrowP03').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                $('#hoverLi #overP03').delay(1000).animate({ opacity : 1 , width : 102 , left : -549 }, 500, 'easeOutElastic');
-                break;
-
-            case '04':
-                resetHover();
-                $('<style> #navigation li:hover:not(.selected) {color:#ca6eb6} #navigation .selected {color:#ca6eb6} </style>').appendTo('head');
-                $("#menuSection > #li04").addClass("selected").removeClass("allowHover");
-                $('#arrowLi #arrowP04').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                $('#hoverLi #overP04').delay(1000).animate({ opacity : 1 , width : 75 , left : -427 }, 500, 'easeOutElastic');
-                break;
-
-            case '05':
-                resetHover();
-                $('<style> #navigation li:hover:not(.selected) {color:#bcb134} #navigation .selected {color:#bcb134} </style>').appendTo('head');
-                $("#menuSection > #li05").addClass("selected").removeClass("allowHover");
-                $('#arrowLi #arrowP05').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                $('#hoverLi #overP05').delay(1000).animate({ opacity : 1 , width : 84 , left : -333 }, 500, 'easeOutElastic');
-                break;
-
-            case '06':
-                resetHover();
-                $('<style> #navigation li:hover:not(.selected) {color:#593a7a} #navigation .selected {color:#593a7a} </style>').appendTo('head');
-                $("#menuSection > #li06").addClass("selected").removeClass("allowHover");
-                $('#arrowLi #arrowP06').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                $('#hoverLi #overP06').delay(1000).animate({ opacity : 1 , width : 122 , left : -228 }, 500, 'easeOutElastic');
-                break;
-
-            case '07':
-                resetHover();
-                $('<style> #navigation li:hover:not(.selected) {color:#a12701} #navigation .selected {color:#a12701} </style>').appendTo('head');
-                $("#menuSection > #li07").addClass("selected").removeClass("allowHover");
-                $('#arrowLi #arrowP07').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                $('#hoverLi #overP07').delay(1000).animate({ opacity : 1 , width : 62 , left : -85 }, 500, 'easeOutElastic');
-                break;
-        }
+        resetHover();
+        var li_num = patt1.exec(selector)[0];
+        $("#menuSection > #li"+li_num).addClass("selected").removeClass("allowHover");
 
         //////
 
@@ -184,65 +130,9 @@ function onClickHandler(e) {
             var sel = document.querySelector("#page" + patt1.exec(e.target.parentNode.id)[0]);
 
             //////
-
-            switch (patt1.exec(e.target.parentNode.id)[0]) {
-                case '01':
-                    resetHover();
-                    $('<style> #navigation li:hover:not(.selected) {color:#333} #navigation .selected {color:#333} </style>').appendTo('head');
-                    $("#menuSection > #li01").addClass("selected").removeClass("allowHover");
-                    $('#arrowLi #arrowP01').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                    $('#hoverLi #overP01').delay(1000).animate({ opacity : 1 , width : 42 , left : -693 }, 500, 'easeOutElastic');
-                    break;
-
-                case '02':
-                    resetHover();
-                    $('<style> #navigation li:hover:not(.selected) {color:#02627c} #navigation .selected {color:#02627c} </style>').appendTo('head');
-                    $("#menuSection > #li02").addClass("selected").removeClass("allowHover");
-                    $('#arrowLi #arrowP02').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                    $('#hoverLi #overP02').delay(1000).animate({ opacity : 1 , width : 62 , left : -631 }, 500, 'easeOutElastic');
-                    break;
-
-                case '03':
-                    resetHover();
-                    $('<style> #navigation li:hover:not(.selected) {color:#c16d00} #navigation .selected {color:#c16d00} </style>').appendTo('head');
-                    $("#menuSection > #li03").addClass("selected").removeClass("allowHover");
-                    $('#arrowLi #arrowP03').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                    $('#hoverLi #overP03').delay(1000).animate({ opacity : 1 , width : 102 , left : -549 }, 500, 'easeOutElastic');
-                    break;
-
-                case '04':
-                    resetHover();
-                    $('<style> #navigation li:hover:not(.selected) {color:#ca6eb6} #navigation .selected {color:#ca6eb6} </style>').appendTo('head');
-                    $("#menuSection > #li04").addClass("selected").removeClass("allowHover");
-                    $('#arrowLi #arrowP04').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                    $('#hoverLi #overP04').delay(1000).animate({ opacity : 1 , width : 75 , left : -427 }, 500, 'easeOutElastic');
-                    break;
-
-                case '05':
-                    resetHover();
-                    $('<style> #navigation li:hover:not(.selected) {color:#bcb134} #navigation .selected {color:#bcb134} </style>').appendTo('head');
-                    $("#menuSection > #li05").addClass("selected").removeClass("allowHover");
-                    $('#arrowLi #arrowP05').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                    $('#hoverLi #overP05').delay(1000).animate({ opacity : 1 , width : 84 , left : -333 }, 500, 'easeOutElastic');
-                    break;
-
-                case '06':
-                    resetHover();
-                    $('<style> #navigation li:hover:not(.selected) {color:#593a7a} #navigation .selected {color:#593a7a} </style>').appendTo('head');
-                    $("#menuSection > #li06").addClass("selected").removeClass("allowHover");
-                    $('#arrowLi #arrowP06').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                    $('#hoverLi #overP06').delay(1000).animate({ opacity : 1 , width : 122 , left : -228 }, 500, 'easeOutElastic');
-                    break;
-
-                case '07':
-                    resetHover();
-                    $('<style> #navigation li:hover:not(.selected) {color:#a12701} #navigation .selected {color:#a12701} </style>').appendTo('head');
-                    $("#menuSection > #li07").addClass("selected").removeClass("allowHover");
-                    $('#arrowLi #arrowP07').delay(1000).animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
-                    $('#hoverLi #overP07').delay(1000).animate({ opacity : 1 , width : 62 , left : -85 }, 500, 'easeOutElastic');
-                    break;
-            }
-
+            var li_num = patt1.exec(e.target.parentNode.id)[0];
+            resetHover();
+            $("#menuSection > #li"+li_num).addClass("selected").removeClass("allowHover");
             //////
 
             $("#wrapper").scrollTo(sel.offsetTop + 'px', 1500, {
