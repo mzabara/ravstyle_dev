@@ -238,3 +238,5 @@ footer{
     top: 0;
     z-index: 2;
 }
+
+#first .bolla1 {height:352px; width:357px; max-width:1920px; position:absolute; z-index:6; top:420px; left:20px;}
