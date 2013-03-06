@@ -229,7 +229,7 @@ function setupParallax() {
                 }
                 var dx = '50%';
                 var dy = b + 'px';
-                a.animate({'background-position-x': dx, 'background-position-y': dy}, 1500, "easeOutExpo");
+                a.stop().animate({'background-position-x': dx, 'background-position-y': dy}, 1500, "easeOutExpo");
                 $('[data-type="background_sprite"]', a).each(function () {
                     var a = $(this);
                     var b = -($window.scrollTop() / a.data("speed"));
