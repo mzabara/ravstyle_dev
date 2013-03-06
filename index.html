@@ -4,301 +4,179 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>The &laquo;RAVSTYLE&raquo; &ndash; make up & hair style</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/media.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/elusive-webfont.css">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/jquery.transform-0.9.3.min_.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/browser-detection.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/media.js"></script>
     <!--[if IE 7]>
     <link rel="stylesheet" href="css/elusive-webfont-ie7.css">
     <script type="text/javascript" src="js/lte-ie7.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax-srolling.js"></script>
-    <script type="text/javascript" src="js/scrollspy.js"></script>
-    <script type="text/javascript" src="js/media.js"></script>
-    <!--<script type="text/javascript" src="js/ie.blocker.js"></script>-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
-<body data-spy="scroll" data-target=".navigation">
 
-<nav>
-    <ul class="navigation">
-        <li>
-            <a href="#index">Главная</a>
-        </li>
-        <li>
-            <a href="#wedding">Свадьба</a>
-        </li>
-        <li>
-            <a href="#style">Стиль</a>
-        </li>
-        <li>
-            <a href="#creative">Креатив</a>
-        </li>
-        <li>
-            <a href="#cost">Стоимость услуг</a>
-        </li>
-        <li>
-            <a href="#contacts">Контакты</a>
-        </li>
-    </ul>
-</nav>
+<body>
+<header>
+    <div class="logotyp">
+        <img src="images/dark-logo.png" alt="">
+    </div>
+    <nav id="navigation">
+        <ul id="menuSection">
+            <li id="li01" class="navItem"><a>Главная</a></li>
+            <li id="li02" class="navItem"><a>Свадьба</a></li>
+            <li id="li03" class="navItem"><a>Стиль</a></li>
+            <li id="li04" class="navItem"><a>Креатив</a></li>
+            <li id="li05" class="navItem"><a>Стоимость услуг</a></li>
+            <li id="li06" class="navItem"><a>Контакты</a></li>
+        </ul>
+    </nav>
+    <div id="socials">
+        <a href="#">
+            <i class="icon-facebook"></i>
+        </a>
+        <a href="#">
+            <i class="icon-vkontakte"></i>
+        </a>
+    </div>
+</header>
 
-<div class="logotyp">
-    <img src="images/dark-logo.png" alt="">
-</div>
+<section id="wrapper" class="ontop">
+
+<article id="page01">
+    <section id="first" data-speed="18" data-type="background" data-offsety="0">
+        <article>
+            <div class="light-1" data-type="element" data-offsety="520" data-speed="0.7"><img src="images/parallax/index-1.png"></div>
+            <div class="light-2" data-type="element" data-offsety="390" data-speed="0.3"><img src="images/parallax/index-2.png"></div>
+            <div class="light-3" data-type="element" data-offsety="650" data-speed="1"><img src="images/parallax/index-3.png"></div>
+            <div class="intro" data-type="element" data-offsety="250" data-speed="2">
+                <div class="f30">
+                    the
+                </div>
+                <div class="f90">
+                    RAVSTYLE
+                </div>
+                <div class="f20">
+                    make up & hair style
+                </div>
+                <div class="text">
+                    <p>Наша работа &mdash; нести красоту людям.</p>
+                    <p>Помните! Нет не красивых людей, есть ленивые!</p>
+                    <i class="icon-heart-alt"></i>
+                </div>
+            </div>
+        </article>
+    </section>
+</article>
+
+<article id="page02">
+    <section id="second" data-speed="17" data-type="background" data-offsety="0">
+        <article>
+            <div class="wedding-1" data-type="element" data-offsety="1150" data-speed="3"><img src="images/parallax/wedding-1.png"></div>
+            <div class="wedding-2" data-type="element" data-offsety="720" data-speed="9"><img src="images/parallax/wedding-2.png"></div>
+            <div class="wedding-3" data-type="element" data-offsety="1150" data-speed="6"><img src="images/parallax/wedding-3.png"></div>
+            <div class="wedding-4" data-type="element" data-offsety="8900" data-speed="0.2"><img src="images/parallax/wedding-4.png"></div>
+        </article>
+    </section>
+</article>
+
+<article id="page03">
+    <section id="third" data-speed="6" data-type="background" data-offsety="250">
+        <article>
+        </article>
+    </section>
+</article>
+
+<article id="page04">
+    <section id="fourth" data-speed="8" data-type="background" data-offsety="380">
+        <article>
+            <div class="creative-1" data-type="element" data-offsety="2750" data-speed="1.4"><img src="images/parallax/creative-1.png"></div>
+            <div class="creative-2" data-type="element" data-offsety="1150" data-speed="4"><img src="images/parallax/creative-2.png"></div>
+            <div class="creative-3" data-type="element" data-offsety="20100" data-speed="0.2"><img src="images/parallax/creative-3.png"></div>
+            <div class="creative-4" data-type="element" data-offsety="38900" data-speed="0.1"><img src="images/parallax/creative-4.png"></div>
+
+            <div class="slide" data-type="element" data-offsety="2050" data-speed="2">
+                <div class="bx-wrapper">
+                    <div class="bx-window">
+                        <div id="slider_creative">
+                            <div>
+                                <img src="images/gallery/creative/1.jpg" class="img1">
+                                <img src="images/gallery/creative/2.jpg" class="img2">
+                                <img src="images/gallery/creative/3.jpg" class="img3">
+
+                                <img src="images/gallery/creative/4.jpg" class="img4">
+                                <img src="images/gallery/creative/5.jpg" class="img5">
+                                <img src="images/gallery/creative/6.jpg" class="img6">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="bx-prev">
+                        <i class="icon-chevron-left"></i>
+                    </a>
+                    <a href="#" class="bx-next">
+                        <i class="icon-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="text">
+                    <h1>
+                        <span class="left-shape"></span>
+                        Креатив
+                        <span class="right-shape"></span>
+                    </h1>
+                    <p>Работа стилиста по созданию креативного образа похожа на работу художника создающего своё полотно.
+                        Креативному образу особо свойственен творческий подход, ведь креатив - это, прежде всего яркость,
+                        что-то совсем необычное, бросающееся в глаза с использованием специальных красок, блесток,
+                        звездочек, перьев и спецэффектов. Такой образ будет уместен на шумных вечеринках, дискотеках,
+                        карнавалах и шоу.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+</article>
+
+<article id="page05">
+    <section id="fifth" data-speed="10" data-type="background" data-offsety="320">
+        <article>
+            <div class="cost-1" data-type="element" data-offsety="5700" data-speed="1"><img src="images/parallax/cost-1.png"></div>
+            <div class="cost-2" data-type="element" data-offsety="16600" data-speed="0.3"><img src="images/parallax/cost-2.png"></div>
+            <div class="cost-3" data-type="element" data-offsety="2650" data-speed="2"><img src="images/parallax/cost-3.png"></div>
+        </article>
+    </section>
+</article>
+
+<article id="page06">
+    <section id="sixth" data-speed="8" data-type="background" data-offsety="670">
+        <article>
+            <div class="contact-info" data-type="element" data-offsety="2200" data-speed="3.2">
+                <h1>Анастасия Рогожкина</h1>
+                <p>
+                    <i class="icon-phone-alt"></i>+7 916 3567669
+                </p>
+                <p>
+                    <i class="icon-skype"></i> <a href="skype:[ravstyle.ru]?[call]">ravstyle.ru</a>
+                </p>
+                <p>
+                    <i class="icon-envelope"></i> <a href="mailto:info@ravstyle.ru">info@ravstyle.ru</a>
+                </p>
+            </div>
+        </article>
+    </section>
+</article>
+
+</section>
 
 <footer>
     &copy; RAVSTYLE, 2013
 </footer>
-
-<section id="index" data-speed="0" data-type="background" data-offsety="0">
-    <!-- Parallax object -->
-    <div class="element light-1" data-type="element" data-offsety="670" data-speed="3">
-        <img src="images/parallax/index-1.png" alt="">
-    </div>
-    <div class="element light-2" data-type="element" data-offsety="570" data-speed="1">
-        <img src="images/parallax/index-2.png" alt="">
-    </div>
-    <div class="element light-3" data-type="element" data-offsety="250" data-speed="0.5">
-        <img src="images/parallax/index-3.png" alt="">
-    </div>
-    <div class="element light-4" data-type="element" data-offsety="53" data-speed="1.2">
-        <img src="images/parallax/index-4.png" alt="">
-    </div>
-    <div class="element intro" data-type="element" data-offsety="350" data-speed="5">
-        <div class="row text-center">
-            <div class="f30 span12">
-                the
-            </div>
-            <div class="clearfix"></div>
-            <div class="f90 span12">
-                RAVSTYLE
-            </div>
-            <div class="f20 span12">
-                make up & hair style
-            </div>
-        </div>
-    </div>
-    <!-- Parallax object -->
-</section>
-
-<section id="wedding" data-speed="0" data-type="background" data-offsety="0">
-    <!-- Parallax object -->
-    <div class="element wedding-1" data-type="element" data-offsety="400" data-speed="3">
-        <img src="images/parallax/wedding-1.png" alt="">
-    </div>
-    <div class="element wedding-2" data-type="element" data-offsety="1500" data-speed="1">
-        <img src="images/parallax/wedding-2.png" alt="">
-    </div>
-    <div class="element wedding-3" data-type="element" data-offsety="1100" data-speed="4">
-        <img src="images/parallax/wedding-3.png" alt="">
-    </div>
-    <!-- Parallax object -->
-</section>
-
-<section id="style" data-speed="0" data-type="background" data-offsety="0">
-        <div class="slide evening-makeup">
-            <div class="label f20">
-                Вечерний<br>макияж
-            </div>
-            <div class="color-image"></div>
-        </div>
-        <div class="slide day-makeup">
-            <div class="label f20">
-                Дневной<br>макияж
-            </div>
-            <div class="color-image"></div>
-        </div>
-        <div class="slide holiday-makeup">
-            <div class="label f20">
-                Праздничный<br>макияж
-            </div>
-            <div class="color-image"></div>
-        </div>
-        <div class="slide stylized-makeup">
-            <div class="label f20">
-                Стилизованный<br>макияж
-            </div>
-            <div class="color-image"></div>
-        </div>
-</section>
-
-<section id="creative" data-speed="0" data-type="background" data-offsety="0">
-    <!-- Parallax object -->
-    <div class="element creative-1" data-type="element" data-offsety="16340" data-speed="0.2">
-        <img src="images/parallax/creative-1.png" alt="">
-    </div>
-    <div class="element creative-2" data-type="element" data-offsety="3508" data-speed="1">
-        <img src="images/parallax/creative-2.png" alt="">
-    </div>
-    <div class="element creative-3" data-type="element" data-offsety="1936" data-speed="3">
-        <img src="images/parallax/creative-3.png" alt="">
-    </div>
-    <div class="element creative-4" data-type="element" data-offsety="8720" data-speed="0.4">
-        <img src="images/parallax/creative-4.png" alt="">
-    </div>
-    <!-- Parallax object -->
-    <article>
-        ss
-    </article>
-</section>
-
-<section id="cost" data-speed="0" data-type="background" data-offsety="0">
-    <!-- Parallax object -->
-    <div class="element cost-1" data-type="element" data-offsety="5100" data-speed="1">
-        <img src="images/parallax/cost-1.png" alt="">
-    </div>
-    <div class="element cost-2" data-type="element" data-offsety="8750" data-speed="0.5">
-        <img src="images/parallax/cost-2.png" alt="">
-    </div>
-    <div class="element cost-3" data-type="element" data-offsety="1750" data-speed="3">
-        <img src="images/parallax/cost-3.png" alt="">
-    </div>
-    <!-- Parallax object -->
-    <div class="container">
-        <div class="page-header">
-            <h1>
-                <span class="left-shape"></span>
-                Стоимость услуг
-                <span class="right-shape"></span>
-            </h1>
-        </div>
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Наименование услуги</th>
-                <th>Содержание</th>
-                <th>Стоимость услуги (руб.)</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="f15">Свадебная стилистика</td>
-                <td>
-                    <p>Свадебный визаж и прическа (в день свадьбы с выездом)</p>
-                    <p>Репетиция визажа и прически (с выездом)</p>
-                </td>
-                <td>
-                    <p>5000</p>
-                    <p>2500</p>
-                </td>
-            </tr>
-            <tr>
-                <td  class="f15">Работа над образом гостей</td>
-                <td>
-                    <p>Визаж</p>
-                    <p>Прическа (в зависимости от длины волос)</p>
-                    <p>Укладка</p>
-                </td>
-                <td>
-                    <p>1500</p>
-                    <p>от 1500</p>
-                    <p>от 1000</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="f15">Визаж и укладка для мужчин</td>
-                <td>
-                    <p>Свадебная укладка + визаж</p>
-                    <p>Укладка + визаж для фотосессий</p>
-                </td>
-                <td>
-                    <p>1500</p>
-                    <p>1500</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="f15">ВИЗАЖ</td>
-                <td>Дневной, вечерний, праздничный</td>
-                <td>2500</td>
-            </tr>
-            <tr>
-                <td class="f15">Визаж для фотосессий</td>
-                <td>
-                    <p>1 макияж</p>
-                    <p>2 макияжа</p>
-                    <p>3 макияжа</p>
-                </td>
-                <td>
-                    <p>2500</p>
-                    <p>3500</p>
-                    <p>4500</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="f15">Визаж и прическа (создание образа)<br>для фотосессий</td>
-                <td>
-                    <p>1 образ</p>
-                    <p>2 образа</p>
-                    <p>3 образа</p>
-                </td>
-                <td>
-                    <p>5000</p>
-                    <p>7000</p>
-                    <p>9000</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="f15">Подиумный и фантазийный макияж
-                </td>
-                <td>Для вечеринок и фотосессий</td>
-                <td>2500</td>
-            </tr>
-            <tr>
-                <td class="f15">Визаж и прическа для показов</td>
-                <td>
-                    <p>до 5ти моделей(цена одной работы)</p>
-                    <p>До 10ти моделей (цена одной работы)</p>
-                </td>
-                <td>
-                    <p>3500</p>
-                    <p>2500</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="f15">Фейс-арт, грим</td>
-                <td>Орнамент на лице с использованием страз, накладных ресниц и др. элементов фейс-арта
-                </td>
-                <td>от 2500</td>
-            </tr>
-            <tr>
-                <td class="f15">Сопровождение свадеб</td>
-                <td>минимум 4 часа</td>
-                <td>1000 в час</td>
-            </tr>
-            </tbody>
-        </table>
-        <p>Ранний выезд и выезд за МКАД оплачивается отдельно</p>
-        <p>В стоимость услуг входят все расходные материалы: шпильки, невидимки, лак для волос, профессиональная косметика.</p>
-        <p>Все условия не окончательны и обсуждаются с каждым клиентом индивидуально!</p>
-    </div>
-</section>
-
-<section id="contacts" data-speed="0" data-type="background" data-offsety="0">
-    <div class="element contact-info" data-type="element" data-offsety="3000" data-speed="2">
-        <h1>Анастасия Рогожкина</h1>
-        <p>
-             <i class="icon-phone-alt"></i>+7 916 3567669
-        </p>
-        <p>
-            <i class="icon-skype"></i> <a href="skype:[ravstyle.ru]?[call]">ravstyle.ru</a>
-        </p>
-        <p>
-            <i class="icon-envelope"></i> <a href="mailto:info@ravstyle.ru">info@ravstyle.ru</a>
-        </p>
-    </div>
-</section>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $(window).scrollTo(1);
-        $('.navigation').localScroll(800);
-        $('[data-spy="scroll"]').each(function () {
-            var $spy = $(this).scrollspy('refresh')
-        });
-    })
-</script>
-
 </body>
 </html>
