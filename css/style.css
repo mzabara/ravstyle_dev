@@ -394,12 +394,12 @@ footer{
 }
 
 #second .wedding-4 {
-    width: 316px;
-    height: 270px;
+    width: 417px;
+    height: 326px;
     max-width: 1920px;
     position: absolute;
     z-index: 6;
-    left: 60px;
+    left: 10px;
 }
 
 /***********************************************************************
@@ -592,9 +592,22 @@ footer{
 
 #fifth > article {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0px;
+    left: 0;
     z-index: 0;
+    text-align: center;
+}
+
+#fifth > article:after {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+    content: ''
 }
 
 #fifth .cost-1 {
@@ -622,6 +635,71 @@ footer{
     position: absolute;
     z-index: 6;
     left: 350px;
+}
+
+
+#fifth .text {
+    width: 728px;
+    background: url("../images/contact-bg.png") 0 0 repeat;
+    padding:0px 20px 30px 20px;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+#fifth h1{
+    font-family: 'RBNaftalin';
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 200%;
+    text-align: center;
+}
+
+#fifth h1 .left-shape{
+    position: relative;
+    display: inline-block;
+    background: url("../images/cost-left-shape.png") 0 0 no-repeat;
+    width: 36px;
+    height: 43px;
+    top: 10px;
+}
+
+#fifth h1 .right-shape{
+    position: relative;
+    display: inline-block;
+    background: url("../images/cost-right-shape.png") 0 0 no-repeat;
+    width: 36px;
+    height: 43px;
+    top: 10px;
+}
+
+#fifth .text p{
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+#fifth .text .table{
+    width: 95%;
+    border-collapse: collapse;
+    margin: 0 auto 25px auto;
+}
+
+#fifth .text .table th,
+#fifth .text .table td{
+    padding: 8px;
+    font-size: 13px;
+    border-bottom: dotted 1px #684389;
+    text-align: left;
+    line-height: 18px;
+}
+
+#fifth .text .table td p{
+    padding: 7px 0;
+    font-size: 13px;
 }
 
 /***********************************************************************

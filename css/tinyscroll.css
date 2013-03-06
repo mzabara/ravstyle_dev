@@ -1,0 +1,40 @@
+.scrollarea .disable {
+    display: none;
+}
+
+.scrollarea .viewport {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrollarea .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.scrollbar {
+    min-height: 0;
+    position: relative;
+    float: right;
+}
+
+.scrollbar .track {
+    position: static;
+    height: 100%;
+    padding: 3px;
+    width: auto;
+    background: #684389;
+    border-radius: 10px;
+}
+
+.scrollbar .thumb {
+    width: 5px;
+    background: #d6adef;
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+}

@@ -6,6 +6,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/media.css" rel="stylesheet" type="text/css">
+    <link href="css/tinyscroll.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/elusive-webfont.css">
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
@@ -15,6 +16,7 @@
     <script type="text/javascript" src="js/browser-detection.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/media.js"></script>
+    <script type="text/javascript" src="js/scroll_bar.js"></script>
     <!--[if IE 7]>
     <link rel="stylesheet" href="css/elusive-webfont-ie7.css">
     <script type="text/javascript" src="js/lte-ie7.js"></script>
@@ -83,7 +85,7 @@
             <div class="wedding-1" data-type="element" data-offsety="1150" data-speed="3"><img src="images/parallax/wedding-1.png"></div>
             <div class="wedding-2" data-type="element" data-offsety="720" data-speed="9"><img src="images/parallax/wedding-2.png"></div>
             <div class="wedding-3" data-type="element" data-offsety="1150" data-speed="6"><img src="images/parallax/wedding-3.png"></div>
-            <div class="wedding-4" data-type="element" data-offsety="8900" data-speed="0.2"><img src="images/parallax/wedding-4.png"></div>
+            <div class="wedding-4" data-type="element" data-offsety="8800" data-speed="0.2"><img src="images/parallax/wedding-4.png"></div>
         </article>
     </section>
 </article>
@@ -150,6 +152,132 @@
             <div class="cost-1" data-type="element" data-offsety="5700" data-speed="1"><img src="images/parallax/cost-1.png"></div>
             <div class="cost-2" data-type="element" data-offsety="16600" data-speed="0.3"><img src="images/parallax/cost-2.png"></div>
             <div class="cost-3" data-type="element" data-offsety="2650" data-speed="2"><img src="images/parallax/cost-3.png"></div>
+            <div class="text">
+                <h1>
+                    <span class="left-shape"></span>
+                    Стоимость услуг
+                    <span class="right-shape"></span>
+                </h1>
+                <div class="scrollarea">
+                    <div class="scrollbar">
+                        <div class="track">
+                            <div class="thumb"></div>
+                        </div>
+                    </div>
+                    <div class="viewport" style="height:600px;">
+                        <div class="overview">
+                            <table class="table">
+                        <thead>
+                        <tr>
+                            <th style="width: 220px;">Наименование услуги</th>
+                            <th style="width: 230px;">Содержание</th>
+                            <th>Стоимость услуги (руб.)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Свадебная стилистика</td>
+                            <td>
+                                <p>Свадебный визаж и прическа (в день свадьбы с выездом)</p>
+                                <p>Репетиция визажа и прически (с выездом)</p>
+                            </td>
+                            <td>
+                                <p>5000</p>
+                                <p>2500</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Работа над образом гостей</td>
+                            <td>
+                                <p>Визаж</p>
+                                <p>Прическа (в зависимости от длины волос)</p>
+                                <p>Укладка</p>
+                            </td>
+                            <td>
+                                <p>1500</p>
+                                <p>от 1500</p>
+                                <p>от 1000</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Визаж и укладка для мужчин</td>
+                            <td>
+                                <p>Свадебная укладка + визаж</p>
+                                <p>Укладка + визаж для фотосессий</p>
+                            </td>
+                            <td>
+                                <p>1500</p>
+                                <p>1500</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ВИЗАЖ</td>
+                            <td>Дневной, вечерний, праздничный</td>
+                            <td>2500</td>
+                        </tr>
+                        <tr>
+                            <td class="f15">Визаж для фотосессий</td>
+                            <td>
+                                <p>1 макияж</p>
+                                <p>2 макияжа</p>
+                                <p>3 макияжа</p>
+                            </td>
+                            <td>
+                                <p>2500</p>
+                                <p>3500</p>
+                                <p>4500</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Визаж и прическа (создание образа)<br>для фотосессий</td>
+                            <td>
+                                <p>1 образ</p>
+                                <p>2 образа</p>
+                                <p>3 образа</p>
+                            </td>
+                            <td>
+                                <p>5000</p>
+                                <p>7000</p>
+                                <p>9000</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Подиумный и фантазийный макияж
+                            </td>
+                            <td>Для вечеринок и фотосессий</td>
+                            <td>2500</td>
+                        </tr>
+                        <tr>
+                            <td>Визаж и прическа для показов</td>
+                            <td>
+                                <p>до 5ти моделей(цена одной работы)</p>
+                                <p>До 10ти моделей (цена одной работы)</p>
+                            </td>
+                            <td>
+                                <p>3500</p>
+                                <p>2500</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Фейс-арт, грим</td>
+                            <td>Орнамент на лице с использованием страз, накладных ресниц и др. элементов фейс-арта
+                            </td>
+                            <td>от 2500</td>
+                        </tr>
+                        <tr>
+                            <td>Сопровождение свадеб</td>
+                            <td>минимум 4 часа</td>
+                            <td>1000 в час</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                            <p>Ранний выезд и выезд за МКАД оплачивается отдельно</p>
+                            <p>В стоимость услуг входят все расходные материалы: шпильки, невидимки, лак для волос, профессиональная косметика.</p>
+                            <p>Все условия не окончательны и обсуждаются с каждым клиентом индивидуально!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
     </section>
 </article>
@@ -178,5 +306,12 @@
 <footer>
     &copy; RAVSTYLE, 2013
 </footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.scrollarea').gcScrollBar();
+    })
+</script>
+
 </body>
 </html>
