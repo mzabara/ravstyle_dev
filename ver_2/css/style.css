@@ -272,12 +272,12 @@ footer{
 }
 
 #first .intro {
-    height: 333px;
+    /*height: 333px;*/
     width: 710px;
     max-width: 1920px;
     position: absolute;
     z-index: 6;
-    top: 340px;
+    top: 250px;
     left: 150px;
     background: url("../images/parallax/intro.png") 0 0 no-repeat;
     font-family: 'RBNaftalin';
@@ -298,6 +298,24 @@ footer{
 }
 
 .f20{
+    font-size: 20px;
+}
+
+#first .text{
+    margin-top: 90px;
+    color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    text-shadow: none;
+}
+
+#first .text p{
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+#first .text i{
+    display: inline-block;
+    margin-top: 10px;
     font-size: 20px;
 }
 
