@@ -64,6 +64,7 @@ body > section {
 
 #wrapper {
     background: black;
+    overflow: hidden;
 }
 
 #wrapper > article {
@@ -81,6 +82,30 @@ body > section {
     width: 87px;
     height: 146px;
     z-index: 10;
+}
+
+#socials{
+    position: fixed;
+    width: 28px;
+    top:25px;
+    right: 0;
+    z-index: 10;
+    background: #2f3132;
+    border-radius: 2px 0 0 2px;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+    padding: 2px 0;
+}
+
+#socials a{
+    float: left;
+    padding: 2px 5px;
+    font-size: 17px;
+    color: #8a897a;
+}
+
+#socials a:hover{
+    color: #e56315;
 }
 
 nav{
@@ -221,7 +246,6 @@ footer{
     min-width: 1090px;
     position: relative;
     overflow: hidden;
-    background-size: cover;
 }
 
 /***********************************************************************
@@ -272,7 +296,7 @@ footer{
 }
 
 #first .intro {
-    /*height: 333px;*/
+    height: 333px;
     width: 710px;
     max-width: 1920px;
     position: absolute;
@@ -288,21 +312,26 @@ footer{
 }
 
 #first .f30{
+    position: relative;
+    top: 70px;
     font-size: 30px;
-    margin-top: 90px;
 }
 
 .f90{
+    position: relative;
+    top: 90px;
     font-size: 90px;
-    margin-bottom: 25px;
 }
 
 .f20{
+    position: relative;
+    top: 110px;
     font-size: 20px;
 }
 
 #first .text{
-    margin-top: 90px;
+    position: relative;
+    top: 210px;
     color: #ffffff;
     font-family: "PT Sans", sans-serif;
     text-shadow: none;
@@ -476,6 +505,7 @@ footer{
 #fourth .text {
     font-size: 14px;
     line-height: 20px;
+    text-shadow:  1px 1px 1px rgba(127, 107, 7, 0.5);
 }
 
 #fourth .slide {
@@ -533,11 +563,13 @@ footer{
     top: 210px;
     color: #ffffff;
     font-size: 30px;
+    text-shadow: 3px 3px 1px rgba(127, 107, 7, 0.5);
 }
 
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-next:hover{
     color: #7f6b07;
+    text-shadow: none;
 }
 
 .bx-wrapper .bx-prev{
@@ -563,6 +595,15 @@ footer{
     position: absolute;
     top: 0px;
     z-index: 0;
+}
+
+#fifth .cost-1 {
+    width: 280px;
+    height: 285px;
+    max-width: 1920px;
+    position: absolute;
+    z-index: 6;
+    left: 40px;
 }
 
 /***********************************************************************
@@ -592,7 +633,7 @@ footer{
     line-height: 50px;
     background: url("../images/contact-bg.png") 0 0 repeat;
     border-radius: 10px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 #sixth .contact-info a{
