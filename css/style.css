@@ -615,7 +615,7 @@ footer{
     height: 285px;
     max-width: 1920px;
     position: absolute;
-    z-index: 6;
+    z-index: 4;
     left: 40px;
 }
 
@@ -624,7 +624,7 @@ footer{
     height: 377px;
     max-width: 1920px;
     position: absolute;
-    z-index: 6;
+    z-index: 4;
     right: 10px;
 }
 
@@ -633,7 +633,7 @@ footer{
     height: 168px;
     max-width: 1920px;
     position: absolute;
-    z-index: 6;
+    z-index: 4;
     left: 350px;
 }
 
@@ -641,13 +641,14 @@ footer{
 #fifth .text {
     width: 728px;
     background: url("../images/contact-bg.png") 0 0 repeat;
-    padding:0px 20px 30px 20px;
+    padding:0px 20px 20px 20px;
     border-radius: 10px;
     position: relative;
     display: inline-block;
     *display: inline;
     *zoom: 1;
     vertical-align: middle;
+    z-index: 5;
 }
 
 #fifth h1{
