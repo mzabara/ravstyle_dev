@@ -429,13 +429,19 @@ footer{
     background-position: 50% 0;
     -webkit-box-shadow: 0 0 15px rgba(116, 7, 89, 0.8);
     box-shadow: 0 0 15px rgba(116, 7, 89, 0.8);
+    overflow: hidden;
+    text-align: center;
+}
+
+#third .style-frame.active .label{
+    display: none;
 }
 
 #third .style-frame .label{
     position: absolute;
     top: 50%;
     right: 0;
-    width: 242px;
+    width: 180px;
     padding: 15px;
     background: url("../images/style-label-bg.png") #b41212 0 0;
     color: #ffffff;
@@ -444,29 +450,33 @@ footer{
     font-size: 20px;
     z-index: 7;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+#third .style-frame img{
 }
 
 #third .evening-makeup{
     left: 0;
-    background-image: url("../images/style-1off.jpg");
+    width: 40%;
     z-index: 4;
 }
 
 #third .day-makeup{
-    left: 25%;
-    background-image: url("../images/style-2off.jpg");
+    left: 40%;
+    width: 20%;
     z-index: 3;
 }
 
 #third .holiday-makeup{
-    left: 50%;
-    background-image: url("../images/style-3off.jpg");
+    left: 60%;
+    width: 20%;
     z-index: 2;
 }
 
 #third .stylized-makeup{
-    left: 75%;
-    background-image: url("../images/style-4off.jpg");
+    left: 80%;
+    width: 20%;
     z-index: 1;
 }
 
