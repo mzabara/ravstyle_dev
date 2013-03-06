@@ -166,8 +166,6 @@ function init() {
 
     $("#menuSection > .navItem").addClass("allowHover");
     $("#menuSection > #li01").addClass("selected").removeClass("allowHover");
-    $('#hoverLi #overP01').animate({ opacity : 1 , width : 42 , left : -693 }, 500, 'easeOutElastic');
-    $('#arrowLi #arrowP01').animate({ opacity : 1 , top : 55 }, 400, 'easeInOutExpo');
     document.getElementById("wrapper").className = "selected";
 
     list = $("body>section");
@@ -195,6 +193,16 @@ function resetHover(){
     $("#menuSection > .navItem").addClass("allowHover");
     $('#menuSection li.navItem').removeAttr("style");
 }
+
+$(document).ready(function(e) {
+    $("body").queryLoader2({
+        barColor: "#000000",
+        backgroundColor: "#000000",
+        percentage: true,
+        barHeight: 0,
+        completeAnimation: "fade"
+    });
+});
 
 $(window).load(function (e) {
     $("body > section").removeClass("hidden");
