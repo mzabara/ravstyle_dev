@@ -163,9 +163,16 @@ function setupEventHandlers() {
  */
 
 function init() {
-    document.onmousewheel=function() {
-        return false;
-    };
+    if(window.addEventListener){
+        window.addEventListener('DOMMouseScroll',wheel,false);
+    }
+
+    function wheel(event)
+    {
+        event.preventDefault();
+        event.returnValue=false;
+    }
+    window.onmousewheel=document.onmousewheel=wheel;
 
     $("#menuSection > .navItem").addClass("allowHover");
     $("#menuSection > #li01").addClass("selected").removeClass("allowHover");
