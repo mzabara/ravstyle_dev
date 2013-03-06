@@ -434,10 +434,6 @@ footer{
     cursor: pointer;
 }
 
-.hover{
-
-}
-
 #third .style-frame.active .label{
     display: none;
 }
@@ -465,11 +461,40 @@ footer{
     background-image: url("../images/style-1off.jpg");
 }
 
+#third .hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-position: 50% 0;
+    z-index: 1;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+}
+
+#third .hover:hover{
+    opacity: 1;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+}
+
+#third .evening-makeup .hover{
+    background-image: url("../images/style-1.jpg");
+}
+
 #third .day-makeup{
     left: 25%;
     width: 25%;
     z-index: 3;
     background-image: url("../images/style-2off.jpg");
+}
+
+#third .day-makeup .hover{
+    background-image: url("../images/style-2.jpg");
 }
 
 #third .holiday-makeup{
@@ -479,11 +504,19 @@ footer{
     background-image: url("../images/style-3off.jpg");
 }
 
+#third .holiday-makeup .hover{
+    background-image: url("../images/style-3.jpg");
+}
+
 #third .stylized-makeup{
     left: 75%;
     width: 25%;
     z-index: 1;
     background-image: url("../images/style-4off.jpg");
+}
+
+#third .stylized-makeup .hover{
+    background-image: url("../images/style-4.jpg");
 }
 
 /***********************************************************************

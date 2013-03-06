@@ -97,21 +97,25 @@
                 <div class="label">
                     Вечерний<br>макияж
                 </div>
+                <div class="hover"></div>
             </div>
             <div class="style-frame day-makeup" data-type="element" data-offsety="1360" data-speed="2">
                 <div class="label">
                     Дневной<br>макияж
                 </div>
+                <div class="hover"></div>
             </div>
             <div class="style-frame holiday-makeup" data-type="element" data-offsety="2720" data-speed="1">
                 <div class="label">
                     Праздничный<br>макияж
                 </div>
+                <div class="hover"></div>
             </div>
             <div class="style-frame stylized-makeup" data-type="element" data-offsety="5440" data-speed="0.5">
                 <div class="label">
                     Стилизованный<br>макияж
                 </div>
+                <div class="hover"></div>
             </div>
         </article>
     </section>
@@ -331,22 +335,22 @@
     $(document).ready(function () {
         $('.scrollarea').gcScrollBar();
 
-        $('div.evening-makeup').hover(
-                function() {
-                    var $this = $(this);
-                    $(this).fadeOut('slow', function() {
-                        $this.css('backgroundImage', 'url(images/style-1.jpg)');
-                        $this.fadeIn('slow')
-                    });
-                },
-                function() {
-                    var $this = $(this);
-                    $(this).fadeOut('slow', function() {
-                        $this.css('backgroundImage', 'url(images/style-1off.jpg)');
-                        $this.fadeIn('slow')
-                    });
-                }
-        );
+//        $('div.evening-makeup').hover(
+//                function() {
+//                    var $this = $(this);
+//                    $(this).fadeOut('slow', function() {
+//                        $this.css('backgroundImage', 'url(images/style-1.jpg)');
+//                        $this.fadeIn('slow')
+//                    });
+//                },
+//                function() {
+//                    var $this = $(this);
+//                    $(this).fadeOut('slow', function() {
+//                        $this.css('backgroundImage', 'url(images/style-1off.jpg)');
+//                        $this.fadeIn('slow')
+//                    });
+//                }
+//        );
     })
 </script>
 
