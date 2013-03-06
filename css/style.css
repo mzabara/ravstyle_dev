@@ -458,25 +458,25 @@ footer{
 
 #third .evening-makeup{
     left: 0;
-    width: 40%;
+    width: 25%;
     z-index: 4;
 }
 
 #third .day-makeup{
-    left: 40%;
-    width: 20%;
+    left: 25%;
+    width: 25%;
     z-index: 3;
 }
 
 #third .holiday-makeup{
-    left: 60%;
-    width: 20%;
+    left: 50%;
+    width: 25%;
     z-index: 2;
 }
 
 #third .stylized-makeup{
-    left: 80%;
-    width: 20%;
+    left: 75%;
+    width: 25%;
     z-index: 1;
 }
 
