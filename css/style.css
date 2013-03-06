@@ -431,6 +431,11 @@ footer{
     box-shadow: 0 0 15px rgba(116, 7, 89, 0.8);
     overflow: hidden;
     text-align: center;
+    cursor: pointer;
+}
+
+.hover{
+
 }
 
 #third .style-frame.active .label{
@@ -453,31 +458,32 @@ footer{
     text-align: left;
 }
 
-#third .style-frame img{
-}
-
 #third .evening-makeup{
     left: 0;
     width: 25%;
     z-index: 4;
+    background-image: url("../images/style-1off.jpg");
 }
 
 #third .day-makeup{
     left: 25%;
     width: 25%;
     z-index: 3;
+    background-image: url("../images/style-2off.jpg");
 }
 
 #third .holiday-makeup{
     left: 50%;
     width: 25%;
     z-index: 2;
+    background-image: url("../images/style-3off.jpg");
 }
 
 #third .stylized-makeup{
     left: 75%;
     width: 25%;
     z-index: 1;
+    background-image: url("../images/style-4off.jpg");
 }
 
 /***********************************************************************
