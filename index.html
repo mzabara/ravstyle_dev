@@ -331,13 +331,22 @@
     $(document).ready(function () {
         $('.scrollarea').gcScrollBar();
 
-        $('div.evening-makeup')
-                .mouseover(function() {
-                    $(this).find('img').attr('src', 'images/style-1.jpg');
-                })
-                .mouseout(function() {
-                    $(this).find('img').attr('src', 'images/style-1off.jpg');
-                });
+        $('div.evening-makeup').hover(
+                function() {
+                    var $this = $(this);
+                    $(this).fadeOut('slow', function() {
+                        $this.css('backgroundImage', 'url(images/style-1.jpg)');
+                        $this.fadeIn('slow')
+                    });
+                },
+                function() {
+                    var $this = $(this);
+                    $(this).fadeOut('slow', function() {
+                        $this.css('backgroundImage', 'url(images/style-1off.jpg)');
+                        $this.fadeIn('slow')
+                    });
+                }
+        );
     })
 </script>
 
