@@ -444,7 +444,7 @@ footer{
     right: 0;
     width: 180px;
     padding: 15px;
-    background: url("../images/style-label-bg.png") #b41212 0 0;
+    background: url("../images/style-label-bg.png") #b41212 100% 0;
     color: #ffffff;
     font-family: 'RBNaftalin';
     text-transform: uppercase;
@@ -471,6 +471,7 @@ footer{
     -webkit-transition: opacity 0.5s linear;
     -moz-transition: opacity 0.5s linear;
     -o-transition: opacity 0.5s linear;
+    -ms-transition: opacity 0.5s linear;
     transition: opacity 0.5s linear;
 }
 
@@ -479,6 +480,7 @@ footer{
     -webkit-transition: opacity 0.5s linear;
     -moz-transition: opacity 0.5s linear;
     -o-transition: opacity 0.5s linear;
+    -ms-transition: opacity 0.5s linear;
     transition: opacity 0.5s linear;
 }
 
