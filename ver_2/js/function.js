@@ -163,6 +163,9 @@ function setupEventHandlers() {
  */
 
 function init() {
+    document.onmousewheel=function() {
+        return false;
+    };
 
     $("#menuSection > .navItem").addClass("allowHover");
     $("#menuSection > #li01").addClass("selected").removeClass("allowHover");
@@ -181,7 +184,9 @@ function init() {
         };
     };
 
+
 };
+
 
 var transitionEnd = whichTransitionEvent();
 
