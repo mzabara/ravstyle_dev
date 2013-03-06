@@ -402,6 +402,69 @@ footer{
     left: 10px;
 }
 
+#second .slide {
+    position: absolute;
+    width: 600px;
+    left: 280px;
+    z-index: 10;
+}
+
+#second .slide .text{
+
+    color: #ff455d;
+}
+
+#second .slide .text h1{
+    font-family: 'RBNaftalin';
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0 20px 0;
+}
+
+#second .slide .text h1 .left-shape{
+    display: inline-block;
+    width: 94px;
+    height: 34px;
+    background: url("../images/wedding-left-shape.png");
+}
+
+#second .slide .text h1 .right-shape{
+    display: inline-block;
+    width: 94px;
+    height: 34px;
+    background: url("../images/wedding-right-shape.png");
+}
+
+#second .slide .text p{
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#second .slide ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 430px;
+    height: 333px;
+}
+
+#second .slide li {
+    width: 630px;
+    height: 333px;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    border: solid 5px #fda1ad;
+}
+
+#second .slide li.roundabout-in-focus {
+    cursor: default;
+}
+
+#second .slide li img{
+    width: 100%;
+}
+
 /***********************************************************************
 /* Style
 ***********************************************************************/

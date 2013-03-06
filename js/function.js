@@ -261,3 +261,7 @@ function setupParallax() {
     })
 }
 
+$(document).ready(function () {
+    $('.scrollarea').gcScrollBar();
+    $('ul.roundabout-holder').roundabout();
+})
