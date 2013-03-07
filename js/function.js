@@ -262,6 +262,49 @@ function setupParallax() {
 }
 
 $(document).ready(function () {
+
+    $('div.style-frame').click(function() {
+        var $this = $(this);
+        var isActive = $this.hasClass('active');
+        var width_map = [];
+
+        $('div.style-frame').removeClass('active');
+
+        if(!isActive) {
+            $this.addClass('active');
+        }
+
+        switch($this.index()) {
+            case 0:
+                var width_map = [40, 20, 20, 20]
+                var left_map = [0, 40, 60, 80];
+                break;
+            case 1:
+                var width_map = [20, 40, 20, 20]
+                var left_map = [0, 20, 60, 80];
+                break;
+            case 2:
+                var width_map = [20, 20, 40, 20]
+                var left_map = [0, 20, 40, 80];
+                break;
+            case 3:
+                var width_map = [20, 20, 20, 40]
+                var left_map = [0, 20, 40, 60];
+                break;
+        }
+
+        $('div.style-frame').each(function() {
+            var index = $(this).index();
+            $(this).stop().animate({'width': width_map[index] + "%",'left': left_map[index] + "%"});
+        });
+    });
+
     $('.scrollarea').gcScrollBar();
     $('ul.roundabout-holder').roundabout();
+    $(document).ready(function() {
+        $('ul.roundabout-holder-waterWheel').roundabout({
+            shape: 'waterWheel'
+        });
+    });
 })
+

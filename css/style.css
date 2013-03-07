@@ -497,8 +497,72 @@ footer{
     cursor: pointer;
 }
 
-#third .style-frame.active .label{
+#third .slider,
+#third .text,
+#third .active .hover,
+#third .active .label{
     display: none;
+}
+
+#third .active .slider{
+    position: relative;
+    top: 130px;
+    display: block;
+    margin: 0 auto;
+    width: 520px;
+    z-index: 11;
+}
+
+ul.roundabout-holder-waterWheel {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 32em;
+    height: 35em;
+}
+
+ul.roundabout-holder-waterWheel li {
+    height: 20em;
+    width: 20em;
+    background-color: #b41212;
+    text-align: center;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    border: solid 4px #b41212;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+ul.roundabout-holder-waterWheel li.roundabout-in-focus {
+    cursor: default;
+}
+
+ul.roundabout-holder-waterWheel li img{
+    width: 100%;
+}
+
+#third .active .text{
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    display: block;
+    width: 400px;
+    padding: 20px;
+    background: #b41212;
+    text-align: left;
+}
+
+#third .active .text h1{
+    font-family: 'RBNaftalin';
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#third .active .text p{
+    font-size: 14px;
+    line-height: 18px;
 }
 
 #third .style-frame .label{
@@ -551,11 +615,21 @@ footer{
     background-image: url("../images/style-1.jpg");
 }
 
+#third .evening-makeup.active{
+    background-image: url("../images/style-1blur.jpg");
+    z-index: 7;
+}
+
 #third .day-makeup{
     left: 25%;
     width: 25%;
     z-index: 3;
     background-image: url("../images/style-2off.jpg");
+}
+
+#third .day-makeup.active{
+    background-image: url("../images/style-2blur.jpg");
+    z-index: 7;
 }
 
 #third .day-makeup .hover{
@@ -569,15 +643,26 @@ footer{
     background-image: url("../images/style-3off.jpg");
 }
 
+#third .holiday-makeup.active{
+    background-image: url("../images/style-3blur.jpg");
+    z-index: 7;
+}
+
 #third .holiday-makeup .hover{
     background-image: url("../images/style-3.jpg");
 }
+
 
 #third .stylized-makeup{
     left: 75%;
     width: 25%;
     z-index: 1;
     background-image: url("../images/style-4off.jpg");
+}
+
+#third .stylized-makeup.active{
+    background-image: url("../images/style-4blur.jpg");
+    z-index: 7;
 }
 
 #third .stylized-makeup .hover{

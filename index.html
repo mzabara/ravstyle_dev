@@ -18,6 +18,7 @@
     <script type="text/javascript" src="js/media.js"></script>
     <script type="text/javascript" src="js/scroll_bar.js"></script>
     <script type="text/javascript" src="js/jquery.roundabout.min.js"></script>
+    <script type="text/javascript" src="js/jquery.roundabout-shapes.min.js"></script>
     <!--[if IE 7]>
     <link rel="stylesheet" href="css/elusive-webfont-ie7.css">
     <script type="text/javascript" src="js/lte-ie7.js"></script>
@@ -126,24 +127,92 @@
                     Вечерний<br>макияж
                 </div>
                 <div class="hover"></div>
+                <div class="slider">
+                    <ul class="roundabout-holder-waterWheel">
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/1.jpg" alt="">
+                        </li>
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/2.jpg" alt="">
+                        </li>
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/3.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <h1>Вечерний макияж</h1>
+                    <p>Такой вид макияжа походит для «выхода в свет», специальных мероприятий. Задача вечернего макияжа &mdash; подчеркнуть элегантность и красоту. Такой макияж может быть, как классическим, так и авангардным.</p>
+                </div>
             </div>
             <div class="style-frame day-makeup" data-type="element" data-offsety="1360" data-speed="2">
                 <div class="label">
                     Дневной<br>макияж
                 </div>
                 <div class="hover"></div>
+                <div class="slider">
+                    <ul class="roundabout-holder-waterWheel">
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/5.jpg" alt="">
+                        </li>
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/6.jpg" alt="">
+                        </li>
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/7.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <h1>Дневной макияж</h1>
+                    <p>Лёгкий выразительный образ, создаётся с учётом личного стиля в одежде, подчёркивая индивидуальность. Акценты расставляются исходя из особенностей внешности человека.</p>
+                </div>
             </div>
             <div class="style-frame holiday-makeup" data-type="element" data-offsety="2720" data-speed="1">
                 <div class="label">
                     Праздничный<br>макияж
                 </div>
                 <div class="hover"></div>
+                <div class="slider">
+                    <ul class="roundabout-holder-waterWheel">
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/5.jpg" alt="">
+                        </li>
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/6.jpg" alt="">
+                        </li>
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/7.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <h1>Праздничный макияж</h1>
+                    <p>Может быть ярким, цветным и экстравагантным. Индивидуальный подбор образа в гармонии с вечерним нарядом и прической.</p>
+                </div>
             </div>
             <div class="style-frame stylized-makeup" data-type="element" data-offsety="5440" data-speed="0.5">
                 <div class="label">
                     Стилизованный<br>макияж
                 </div>
                 <div class="hover"></div>
+                <div class="slider">
+                    <ul class="roundabout-holder-waterWheel">
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/5.jpg" alt="">
+                        </li>
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/6.jpg" alt="">
+                        </li>
+                        <li class="roundabout-moveable-item">
+                            <img src="images/gallery/style/7.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <h1>Стилизованный макияж</h1>
+                    <p>Образ для стилизованной, костюмированной вечеринки. Образ позволит стать звездой такого события и перевоплотиться в голливудскую диву 30х годов, египетскую царицу, индийскую красавицу.</p>
+                </div>
             </div>
         </article>
     </section>
@@ -358,48 +427,6 @@
 <footer>
     &copy; RAVSTYLE, 2013
 </footer>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.scrollarea').gcScrollBar();
-
-        $('div.style-frame').click(function() {
-            var $this = $(this);
-            var isActive = $this.hasClass('active');
-            var width_map = [];
-
-            $('div.style-frame').removeClass('active');
-
-            if(!isActive) {
-                $this.addClass('active');
-            }
-
-            switch($this.index()) {
-                case 0:
-                    var width_map = [40, 20, 20, 20]
-                    var left_map = [0, 40, 60, 80];
-                    break;
-                case 1:
-                    var width_map = [20, 40, 20, 20]
-                    var left_map = [0, 20, 60, 80];
-                    break;
-                case 2:
-                    var width_map = [20, 20, 40, 20]
-                    var left_map = [0, 20, 40, 80];
-                    break;
-                case 3:
-                    var width_map = [20, 20, 20, 40]
-                    var left_map = [0, 20, 40, 60];
-                    break;
-            }
-
-            $('div.style-frame').each(function() {
-                var index = $(this).index();
-                $(this).stop().animate({'width': width_map[index] + "%",'left': left_map[index] + "%"});
-            });
-        });
-    })
-</script>
 
 </body>
 </html>
