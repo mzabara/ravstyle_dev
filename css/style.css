@@ -497,6 +497,10 @@ footer{
     cursor: pointer;
 }
 
+#third .active{
+    cursor: default;
+}
+
 #third .slider,
 #third .text,
 #third .active .hover,
