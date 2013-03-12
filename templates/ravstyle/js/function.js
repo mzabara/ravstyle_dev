@@ -295,10 +295,9 @@ $(document).ready(function () {
 
     $('.scrollarea').gcScrollBar();
     $('ul.roundabout-holder').roundabout();
-    $(document).ready(function() {
-        $('ul.roundabout-holder-waterWheel').roundabout({
-            shape: 'waterWheel'
-        });
+
+    $('ul.roundabout-holder-waterWheel').roundabout({
+        shape: 'waterWheel'
     });
 })
 

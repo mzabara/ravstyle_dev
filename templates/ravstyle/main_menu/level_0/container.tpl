@@ -1,1 +1,1 @@
-<ul>{$wrapper}</ul>
+<ul id="menuSection">{$wrapper}</ul>

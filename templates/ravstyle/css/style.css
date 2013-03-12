@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'RBNaftalin';
-    src: url('../font/naftalin.eot');
-    src: url('../font/naftalin.eot.eot?#iefix') format('embedded-opentype'), url('../font/naftalin.woff') format('woff'), url('../font/naftalin.ttf') format('truetype');
+    src: url('../../../font/naftalin.eot');
+    src: url('../font/naftalin.eot.eot?#iefix') format('embedded-opentype'), url('../../../font/naftalin.woff') format('woff'), url('../../../font/naftalin.ttf') format('truetype');
 }
 
 html {

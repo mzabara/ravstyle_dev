@@ -1,1 +1,1 @@
-<li class="home"><a href="{$link}" title="{$title}">{$title}</a>{$wrapper}</li>
+<li id="li0{$index}" class="navItem"><a>{$title}</a>{$wrapper}</li>

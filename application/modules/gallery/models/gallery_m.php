@@ -327,6 +327,34 @@ class Gallery_m extends CI_Model {
         $this->db->where('id', $id);
         $this->db->delete('gallery_category');
     }
+
+    function get_category_images($limit,$id)
+    {
+        $image = array();
+
+        $album = $this->get_albums('date','desc',$id);
+
+        foreach($album as $al)
+        {
+            $album_id[] = $al['id'];
+        }
+
+        $images = $this->db->get('gallery_images')->result_array();
+
+        for ($i=0;$i<count($images);$i++)
+        {
+            if(in_array($images[$i]['album_id'],$album_id)) {
+                $image[$i] = $images[$i];
+                $image[$i]['url']  = 'gallery/album/'.$images[$i]['album_id'].'/image/'.$images[$i]['id'];
+                $image[$i]['file_path'] = 'uploads/gallery/'.$images[$i]['album_id'].'/'.$images[$i]['file_name'].'_prev'.$images[$i]['file_ext'];
+                $image[$i]['thumb_path']=media_url('uploads/gallery/'.$images[$i]['album_id'].'/_thumbs/'.$images[$i]['file_name'].$images[$i]['file_ext']);
+            }
+
+            if($i>$limit){break;}
+        }
+
+        return $image;
+    }
  
 }
 

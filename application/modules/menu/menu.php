@@ -299,6 +299,7 @@ class Menu extends MY_Controller {
             'image' => $this->arranged_menu_array[$index]['image'],
             'wrapper' => $wrapper,
             'target' => $this->arranged_menu_array[$index]['target'],
+            'index' => $index
         );
 
         if ($index == -1) {
