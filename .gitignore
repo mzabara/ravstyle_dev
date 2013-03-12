@@ -1,1 +1,4 @@
 .idea
+system/cache/menus/*
+system/cache/templates_c/*
+system/cache/*
