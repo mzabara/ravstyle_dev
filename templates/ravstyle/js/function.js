@@ -206,16 +206,6 @@ function resetHover(){
     $('#menuSection li.navItem').removeAttr("style");
 }
 
-$(document).ready(function(e) {
-    $("body").queryLoader2({
-        barColor: "#000000",
-        backgroundColor: "#000000",
-        percentage: true,
-        barHeight: 0,
-        completeAnimation: "fade"
-    });
-});
-
 $(window).load(function (e) {
     $("body > section").removeClass("hidden");
     init();
@@ -262,6 +252,14 @@ function setupParallax() {
 }
 
 $(document).ready(function () {
+
+    $("body").queryLoader2({
+        barColor: "#000000",
+        backgroundColor: "#000000",
+        percentage: true,
+        barHeight: 0,
+        completeAnimation: "fade"
+    });
 
     $('div.style-frame').click(function() {
         var $this = $(this);
