@@ -35,7 +35,6 @@
     </div>
     <nav id="navigation">
         {load_menu('main_menu')}
-
     </nav>
     <div id="socials">
         <a href="#">
