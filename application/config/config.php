@@ -43,9 +43,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-            $db['default']['username'] = 'root';
-            $db['default']['password'] = 'mysqlroot';
-            $db['default']['database'] = 'ravstyle';
+            $db['default']['username'] = 'ravstyle_1';
+            $db['default']['password'] = '1qazxsw23edc';
+            $db['default']['database'] = 'ravstyle_1';
             $db['default']['dbdriver'] = 'mysql';
             $db['default']['dbprefix'] = '';
             $db['default']['pconnect'] = FALSE;
