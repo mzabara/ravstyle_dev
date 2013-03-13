@@ -253,7 +253,7 @@ function setupParallax() {
 
 $(document).ready(function () {
 
-    $("body").queryLoader2({
+    $("#ravstyle_loader").queryLoader2({
         barColor: "#000000",
         backgroundColor: "#000000",
         percentage: true,

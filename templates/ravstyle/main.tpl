@@ -47,7 +47,6 @@
 </header>
 
 <section id="wrapper" class="ontop">
-
 <article id="page01">
     <section id="first" data-speed="18" data-type="background" data-offsety="0">
         <article>
