@@ -6,7 +6,7 @@
     <title>{$site_title}</title>
     <link href="{$THEME}/css/style.css" rel="stylesheet" type="text/css">
     <link href="{$THEME}/css/reset.css" rel="stylesheet" type="text/css">
-    <link href="{$THEME}/css/media.css" rel="stylesheet" type="text/css">
+    <!--<link href="{$THEME}/css/media.css" rel="stylesheet" type="text/css">-->
     <link href="{$THEME}/css/tinyscroll.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{$THEME}/css/elusive-webfont.css">
@@ -16,7 +16,7 @@
     <script type="text/javascript" src="{$THEME}/js/jquery.mousewheel.js"></script>
     <script type="text/javascript" src="{$THEME}/js/browser-detection.js"></script>
     <script type="text/javascript" src="{$THEME}/js/main.js"></script>
-    <script type="text/javascript" src="{$THEME}/js/media.js"></script>
+    <!--<script type="text/javascript" src="{$THEME}/js/media.js"></script>-->
     <script type="text/javascript" src="{$THEME}/js/scroll_bar.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.roundabout.min.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.roundabout-shapes.min.js"></script>
