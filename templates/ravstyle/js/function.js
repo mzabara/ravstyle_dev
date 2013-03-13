@@ -255,7 +255,7 @@ $(document).ready(function () {
 
     $("#ravstyle_loader").queryLoader2({
         barColor: "#ffffff",
-        backgroundColor: "#2b0d02",
+        backgroundColor: "#101010",
         percentage: true,
         barHeight: 0,
         completeAnimation: "fade"
