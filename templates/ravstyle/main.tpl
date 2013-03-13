@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1260, user-scalable=yes">
     <title>{$site_title}</title>
     <link href="{$THEME}/css/style.css" rel="stylesheet" type="text/css">
     <link href="{$THEME}/css/reset.css" rel="stylesheet" type="text/css">
