@@ -254,8 +254,8 @@ function setupParallax() {
 $(document).ready(function () {
 
     $("#ravstyle_loader").queryLoader2({
-        barColor: "#000000",
-        backgroundColor: "#000000",
+        barColor: "#2b0d02",
+        backgroundColor: "#2b0d02",
         percentage: true,
         barHeight: 0,
         completeAnimation: "fade"

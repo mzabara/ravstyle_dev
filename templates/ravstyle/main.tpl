@@ -29,6 +29,7 @@
 </head>
 
 <body>
+<section id="ravstyle_loader"></section>
 <header>
     <div class="logotyp">
         <img src="{$THEME}/images/dark-logo.png" alt="">
