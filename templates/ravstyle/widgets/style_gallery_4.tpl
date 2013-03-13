@@ -2,6 +2,7 @@
 <div class="label">
     {$album['name']}
 </div>
+<div class="hover"></div>
 <div class="slider">
     <ul class="roundabout-holder-waterWheel">
         {foreach $album['images'] as $image}
