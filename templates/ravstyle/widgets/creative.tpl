@@ -4,10 +4,12 @@
             <div>
                 {$img = $CI->load->module('gallery')->gallery_m->get_category_images(50, 8)}
                 {$total = count($img)}
+                {$index = 1}
                 {$counter = 1}
                 {foreach $img as $image}
-                    <img src="{site_url('uploads/gallery')}/{$image.album_id}/{$image.file_name}{$image.file_ext}" alt="{$image.description}" title="{$total}">
-                    {if $counter++ % 6 == 0} </div><div>{/if}
+                    <img src="{site_url('uploads/gallery')}/{$image.album_id}/{$image.file_name}{$image.file_ext}" alt="{$image.description}" title="{$total}" class="img{$index}">
+                    {if $counter++ % 6 == 0} {$index = 0}</div><div>{/if}
+                    {$index++;}
                 {/foreach}
             </div>
         </div>
