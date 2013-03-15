@@ -9,13 +9,14 @@
     <!--<link href="{$THEME}/css/media.css" rel="stylesheet" type="text/css">-->
     <link href="{$THEME}/css/tinyscroll.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{$THEME}/css/elusive-webfont.css">
-    <script type="text/javascript" src="{$THEME}/js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="{$THEME}/js/function.js"></script>
+    <link rel="stylesheet" href="{$THEME}/css/elusive-webfont.css" type='text/css'>
+
+    <script type="text/javascript" src="{$THEME}/js/main.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.transform-0.9.3.min_.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.mousewheel.js"></script>
     <script type="text/javascript" src="{$THEME}/js/browser-detection.js"></script>
-    <script type="text/javascript" src="{$THEME}/js/main.js"></script>
+    <script type="text/javascript" src="{$THEME}/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="{$THEME}/js/function.js"></script>
     <!--<script type="text/javascript" src="{$THEME}/js/media.js"></script>-->
     <script type="text/javascript" src="{$THEME}/js/scroll_bar.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.roundabout.min.js"></script>
@@ -119,41 +120,7 @@
             <div class="creative-4" data-type="element" data-offsety="38900" data-speed="0.1"><img src="{$THEME}/images/parallax/creative-4.png"></div>
 
             <div class="slide" data-type="element" data-offsety="2050" data-speed="2">
-                <div class="bx-wrapper">
-                    <div class="bx-window">
-                        <div id="slider_creative">
-                            <div>
-                                <img src="{$THEME}/images/gallery/creative/1.jpg" class="img1">
-                                <img src="{$THEME}/images/gallery/creative/2.jpg" class="img2">
-                                <img src="{$THEME}/images/gallery/creative/3.jpg" class="img3">
-
-                                <img src="{$THEME}/images/gallery/creative/4.jpg" class="img4">
-                                <img src="{$THEME}/images/gallery/creative/5.jpg" class="img5">
-                                <img src="{$THEME}/images/gallery/creative/6.jpg" class="img6">
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="bx-prev">
-                        <i class="icon-chevron-left"></i>
-                    </a>
-                    <a href="#" class="bx-next">
-                        <i class="icon-chevron-right"></i>
-                    </a>
-                </div>
-                <div class="clearfix"></div>
-                <div class="text">
-                    <h1>
-                        <span class="left-shape"></span>
-                        Креатив
-                        <span class="right-shape"></span>
-                    </h1>
-                    <p>Работа стилиста по созданию креативного образа похожа на работу художника создающего своё полотно.
-                        Креативному образу особо свойственен творческий подход, ведь креатив - это, прежде всего яркость,
-                        что-то совсем необычное, бросающееся в глаза с использованием специальных красок, блесток,
-                        звездочек, перьев и спецэффектов. Такой образ будет уместен на шумных вечеринках, дискотеках,
-                        карнавалах и шоу.
-                    </p>
-                </div>
+                {widget('creative')}
             </div>
         </article>
     </section>

@@ -297,5 +297,11 @@ $(document).ready(function () {
     $('ul.roundabout-holder-waterWheel').roundabout({
         shape: 'waterWheel'
     });
+
+    $('#slider_creative').bxSlider({
+        pager: false,
+        nextText: '<i class="icon-chevron-right"></i>',
+        prevText: '<i class="icon-chevron-left"></i>'
+    });
 })
 
