@@ -57,20 +57,7 @@
             <div class="light-2" data-type="element" data-offsety="390" data-speed="0.3"><img src="{$THEME}/images/parallax/index-2.png"></div>
             <div class="light-3" data-type="element" data-offsety="650" data-speed="1"><img src="{$THEME}/images/parallax/index-3.png"></div>
             <div class="intro" data-type="element" data-offsety="250" data-speed="2">
-                <div class="f30">
-                    the
-                </div>
-                <div class="f90">
-                    RAVSTYLE
-                </div>
-                <div class="f20">
-                    make up & hair style
-                </div>
-                <div class="text">
-                    <p>Наша работа &mdash; нести красоту людям.</p>
-                    <p>Помните! Нет не красивых людей, есть ленивые!</p>
-                    <i class="icon-heart-alt"></i>
-                </div>
+                {widget('main_page')}
             </div>
         </article>
     </section>
