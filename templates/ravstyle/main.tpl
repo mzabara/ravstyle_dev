@@ -146,16 +146,7 @@
     <section id="sixth" data-speed="8" data-type="background" data-offsety="670">
         <article>
             <div class="contact-info" data-type="element" data-offsety="2200" data-speed="3.2">
-                <h1>Анастасия Рогожкина</h1>
-                <p>
-                    <i class="icon-phone-alt"></i>+7 916 3567669
-                </p>
-                <p>
-                    <i class="icon-skype"></i> <a href="skype:[ravstyle.ru]?[call]">ravstyle.ru</a>
-                </p>
-                <p>
-                    <i class="icon-envelope"></i> <a href="mailto:info@ravstyle.ru">info@ravstyle.ru</a>
-                </p>
+                {widget('contacts')}
             </div>
         </article>
     </section>
