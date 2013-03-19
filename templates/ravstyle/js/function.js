@@ -318,5 +318,11 @@ $(document).ready(function () {
             });
         }
     });
+
+    var windowHeight = $(window).height();
+    $('.processing').each(function() {
+        var y = $(this).attr('data-offsety') * (windowHeight / 1200);
+        $(this).attr('data-offsety', y);
+    });
 })
 
