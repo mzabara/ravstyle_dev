@@ -91,7 +91,7 @@ body > section {
 
 .logotyp{
     position: fixed;
-    top:20px;
+    top:10px;
     left: 20px;
     width: 87px;
     height: 146px;
@@ -124,8 +124,8 @@ body > section {
 
 nav{
     position: fixed;
-    top:60px;
-    left: 157px;
+    top:30px;
+    left: 147px;
     z-index: 10;
     background: #2f3132!important;
 }
@@ -349,6 +349,7 @@ footer{
     color: #ffffff;
     font-family: "PT Sans", sans-serif;
     text-shadow: none;
+    font-weight: normal;
 }
 
 #first .text p{
@@ -424,7 +425,6 @@ footer{
 }
 
 #second .slide .text{
-
     color: #ff455d;
 }
 
@@ -524,7 +524,7 @@ footer{
 
 #third .active .slider{
     position: relative;
-    top: 130px;
+    top: 150px;
     display: block;
     margin: 0 auto;
     width: 520px;
@@ -534,14 +534,14 @@ footer{
 ul.roundabout-holder-waterWheel {
     list-style: none;
     padding: 0;
-    margin: 0;
-    width: 32em;
-    height: 35em;
+    margin: 0 auto;
+    height: 270px;
+    width: 200px;
 }
 
 ul.roundabout-holder-waterWheel li {
-    height: 20em;
-    width: 20em;
+    height: 320px;
+    width: 320px;
     background-color: #b41212;
     text-align: center;
     cursor: pointer;
@@ -754,6 +754,7 @@ ul.roundabout-holder-waterWheel li img{
     text-align: center;
     text-transform: uppercase;
     margin: 50px 0 40px 0;
+    color: #ffffff;
 }
 
 #fourth .text .left-shape{
@@ -771,9 +772,9 @@ ul.roundabout-holder-waterWheel li img{
 }
 
 #fourth .text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
-    text-shadow:  1px 1px 1px rgba(127, 107, 7, 0.5);
+    color: #000000;
 }
 
 #fourth .slide {
@@ -799,8 +800,8 @@ ul.roundabout-holder-waterWheel li img{
     float: left;
     width: 185px;
     height: 185px;
-    border: 5px solid #FFF;
-    margin: 25px 0 0 25px;
+    border: 3px solid #FFF;
+    margin: 20px 0 0 25px;
     -webkit-box-shadow: 3px 3px 1px rgba(127, 107, 7, 0.5);
     box-shadow: 3px 3px 1px rgba(127, 107, 7, 0.5);
 }
@@ -846,6 +847,10 @@ ul.roundabout-holder-waterWheel li img{
 
 .bx-wrapper .bx-next{
     right: -15px;
+}
+
+.bx-viewport{
+    height: 450px!important;
 }
 
 /***********************************************************************

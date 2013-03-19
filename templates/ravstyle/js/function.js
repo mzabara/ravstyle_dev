@@ -324,5 +324,18 @@ $(document).ready(function () {
         var y = $(this).attr('data-offsety') * (windowHeight / 1200);
         $(this).attr('data-offsety', y);
     });
+
+    WebFontConfig = {
+        google: { families: [ 'PT+Sans::latin,cyrillic' ] }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
 })
 
