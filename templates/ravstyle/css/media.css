@@ -1,5 +1,5 @@
 .media-max-width-1024 #first{
-    background: url('../images/index_1024.jpg') 0 0 no-repeat fixed;
+    background: url('../images/index_1024.jpg') 50% 0 no-repeat fixed;
 }
 
 .media-max-width-1024 #first .intro{
@@ -8,15 +8,15 @@
 }
 
 .media-max-width-1024 #second{
-    background: url('../images/wedding_1024.jpg') 0 0 no-repeat fixed;
+    background: url('../images/wedding_1024.jpg') 50% 0 no-repeat fixed;
 }
 
 .media-max-width-1024 #fourth{
-    background: url('../images/creative_1024.jpg') 0 0 no-repeat fixed;
+    background: url('../images/creative_1024.jpg')50% 0 no-repeat fixed;
 }
 
 .media-max-width-1024 #sixth{
-    background: url('../images/contact_1024.jpg') 0 0 no-repeat fixed;
+    background: url('../images/contact_1024.jpg') 50% 0 no-repeat fixed;
 }
 
 .media-max-width-1024 #second .slide{
@@ -50,9 +50,9 @@
     margin: 20px 0!important;
 }
 
-.media-max-width-1024 #fifth .text{
-    top:-170px!important;
-}
+/*.media-max-width-1024 #fifth .text{*/
+    /*top:-170px!important;*/
+/*}*/
 
 .media-max-width-1024 #sixth .contact-info{
     top:130px!important;
