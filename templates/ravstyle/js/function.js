@@ -303,5 +303,20 @@ $(document).ready(function () {
         nextText: '<i class="icon-chevron-right"></i>',
         prevText: '<i class="icon-chevron-left"></i>'
     });
+
+    $('#li03').click(function() {
+        var init_map = {
+            'width_map': [25,25,25,25],
+            'left_map': [0,25,50,75]
+        };
+
+        if(!$(this).hasClass('selected')) {
+            $('div.style-frame').removeClass('active');
+            $('div.style-frame').each(function() {
+                var index = $(this).index();
+                $(this).css({'width': init_map['width_map'][index] + "%",'left': init_map['left_map'][index] + "%"});
+            });
+        }
+    });
 })
 
