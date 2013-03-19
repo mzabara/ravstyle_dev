@@ -9,7 +9,7 @@
     <link href="{$THEME}/css/media.css" rel="stylesheet" type="text/css">
     <link href="{$THEME}/css/tinyscroll.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{$THEME}/css/elusive-webfont.css" type='text/css'>
-
+    <link id="favicon" rel="shortcut icon" href="{$THEME}/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="{$THEME}/js/main.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.transform-0.9.3.min_.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.mousewheel.js"></script>
