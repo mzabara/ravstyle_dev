@@ -325,6 +325,9 @@ $(document).ready(function () {
         $(this).attr('data-offsety', y);
     });
 
+    var h = $('body').hasClass('media-min-height-1024') ? 650 : 450;
+    $('.scrollarea').css('height', h+'px');
+
     WebFontConfig = {
         google: { families: [ 'PT+Sans::latin,cyrillic' ] }
     };
