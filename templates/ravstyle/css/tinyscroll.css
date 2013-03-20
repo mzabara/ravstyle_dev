@@ -1,3 +1,9 @@
+.scrollarea .scrollbar {
+    position: relative;
+    float: right;
+    min-height: 0;
+}
+
 .scrollarea .disable {
     display: none;
 }
@@ -32,8 +38,8 @@
 }
 
 .scrollbar .thumb {
-    width: 5px;
-    background: #d6adef;
+    width: 8px;
+    background: #ffffff;
     cursor: pointer;
     position: relative;
     border-radius: 3px;

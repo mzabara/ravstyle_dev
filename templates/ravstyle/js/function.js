@@ -291,7 +291,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.scrollarea').gcScrollBar();
+    $('.scrollarea').myScrollBar();
     $('ul.roundabout-holder').roundabout();
 
     $('ul.roundabout-holder-waterWheel').roundabout({

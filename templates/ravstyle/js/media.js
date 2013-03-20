@@ -60,6 +60,7 @@ $(document).ready(function(){
         } else if (width < 1024) {
             width_class_name = 'media-max-width-768'
         }
+
         if (height < 750) {
             height_class_name = 'media-min-height-750';
         }

@@ -188,7 +188,7 @@
                     (this.options.sizethumb === 'auto'
                         ? (this.scrollbar.track.size * this.content.ratio)
                         : this.options.sizethumb
-                    )
+                        )
                 )
             );
 
@@ -253,12 +253,12 @@
         }
     };
 
-    $.fn.gcScrollBar = function (option) {
+    $.fn.myScrollBar = function (option) {
         var args = [].slice.call(arguments, 1);
         return this.each(function () {
             var $this = $(this),
                 data = $this.data('tscroll'),
-                options = $.extend({}, $.fn.gcScrollBar.defaults, typeof option === 'object' && option);
+                options = $.extend({}, $.fn.myScrollBar.defaults, typeof option === 'object' && option);
             if (!data) {
                 $this.data('tscroll', (data = new ScrollBar(this, options)));
             }
@@ -268,7 +268,7 @@
         });
     };
 
-    $.fn.gcScrollBar.defaults = {
+    $.fn.myScrollBar.defaults = {
         axis: 'y', // vertical or horizontal scrollbar? ( x || y ).
         wheel: 40,  //how many pixels must the mouswheel scroll at a time.
         scroll: true, //enable or disable the mousewheel scrollbar
@@ -277,6 +277,6 @@
         drag_content: true
     };
 
-    $.fn.gcScrollBar.Constructor = ScrollBar;
+    $.fn.myScrollBar.Constructor = ScrollBar;
 
 }(jQuery, document));
