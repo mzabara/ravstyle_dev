@@ -252,6 +252,9 @@ function setupParallax() {
 }
 
 $(document).ready(function () {
+    var h = $('body').hasClass('media-min-height-1024') ? 650 : 450;
+    $('.scrollarea').css('height', h+'px');
+    $('.scrollarea').myScrollBar();
 
     $("#ravstyle_loader").queryLoader2({
         barColor: "#ffffff",
@@ -291,7 +294,6 @@ $(document).ready(function () {
         }
     });
 
-    $('.scrollarea').myScrollBar();
     $('ul.roundabout-holder').roundabout();
 
     $('ul.roundabout-holder-waterWheel').roundabout({
@@ -324,9 +326,6 @@ $(document).ready(function () {
         var y = $(this).attr('data-offsety') * (windowHeight / 1200);
         $(this).attr('data-offsety', y);
     });
-
-    var h = $('body').hasClass('media-min-height-1024') ? 650 : 450;
-    $('.scrollarea').css('height', h+'px');
 
     WebFontConfig = {
         google: { families: [ 'PT+Sans::latin,cyrillic' ] }
