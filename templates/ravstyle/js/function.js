@@ -252,7 +252,8 @@ function setupParallax() {
 }
 
 $(document).ready(function () {
-    var h = $('body').hasClass('media-min-height-1024') ? 650 : 450;
+    var windowHeight = $(window).height();
+    var h = windowHeight <= 750 ? 450 : 650;
     $('.scrollarea').css('height', h+'px');
     $('.scrollarea').myScrollBar();
 
@@ -321,7 +322,7 @@ $(document).ready(function () {
         }
     });
 
-    var windowHeight = $(window).height();
+
     $('.processing').each(function() {
         var y = $(this).attr('data-offsety') * (windowHeight / 1200);
         $(this).attr('data-offsety', y);
