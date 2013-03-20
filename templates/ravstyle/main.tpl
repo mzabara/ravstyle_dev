@@ -10,14 +10,14 @@
     <link href="{$THEME}/css/tinyscroll.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{$THEME}/css/elusive-webfont.css" type='text/css'>
     <link id="favicon" rel="shortcut icon" href="{$THEME}/favicon.ico" type="image/x-icon">
-    <script type="text/javascript" src="{$THEME}/js/main.js"></script>
+    <script type="text/javascript" src="{$THEME}/js/main-1363169850627.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.transform-0.9.3.min_.js"></script>
-    <script type="text/javascript" src="{$THEME}/js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="{$THEME}/js/jquery.mousewheel-1363766057062.js"></script>
     <script type="text/javascript" src="{$THEME}/js/browser-detection.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.bxslider.min.js"></script>
-    <script type="text/javascript" src="{$THEME}/js/function.js"></script>
-    <script type="text/javascript" src="{$THEME}/js/media.js"></script>
-    <script type="text/javascript" src="{$THEME}/js/scroll_bar.js"></script>
+    <script type="text/javascript" src="{$THEME}/js/function-1363767588358.js"></script>
+    <script type="text/javascript" src="{$THEME}/js/media-1363766057062.js"></script>
+    <script type="text/javascript" src="{$THEME}/js/scroll_bar-1363766057062.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.roundabout.min.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.roundabout-shapes.min.js"></script>
     <!--[if IE 7]>
