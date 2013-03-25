@@ -3,6 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=1280, user-scalable=yes">
+    <meta name="description" content="свадебный стилист, свадебный стилист в Москве, свадебная прическа на длинные волосы, вечерняя прическа, свадебная прическа, свадебный стилист, свадебные прически, фото причесок, стилист в Москве, макияж свадебный, вечерний макияж, аквагрим, укладка волос, визажист, услуги свадебного стилиста, свадебные прически 2013 года, свадебный макияж 2013 года, вечерний макияж 2013 года,  wedding stylist, wedding stylist in Moscow, wedding hair style for long hair, evening hairstyle, wedding hairdo, wedding stylist, wedding hairstyles, hairstyles photo, stylist in Moscow, wedding make-up, evening make-up, hair styling, make-up artist, the services of a wedding stylist, wedding hairstyles 2013, wedding make-up 2013, evening make-up 2013">
+    <meta name="keywords" content="свадебный стилист, Москва, свадебная прическа, свадебный макияж, свадебные прически 2013 года, фото свадебных причесок, свадебный стилист в Москве, вечерняя прическа, визажист, макияж, аквагрим, выезд на дом, укладка волос, макияж  вечерний, короткие волосы, прически на длинные волосы,  прически с диадемой, прически с живыми цветами, украшения для волос, услуги свадебного стилиста, wedding stylist, Moscow, wedding hairdo, wedding make-up, wedding hairstyles 2013, photo wedding hairstyles, wedding stylist in Moscow, evening hairdo, makeup artist, makeup, departure to the house, hair styling, make-up evening, short hair, hair styles for long hair and hairstyles with the diadem, hair styles, with fresh flowers, hair ornaments, the services of a wedding stylist">
     <title>{$site_title}</title>
     <link href="{$THEME}/css/style.css" rel="stylesheet" type="text/css">
     <link href="{$THEME}/css/reset.css" rel="stylesheet" type="text/css">
@@ -20,6 +22,7 @@
     <script type="text/javascript" src="{$THEME}/js/scroll_bar-1363766057062.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.roundabout.min.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.roundabout-shapes.min.js"></script>
+    <script type="text/javascript" src="{$THEME}/js/ie.blocker.js"></script>
     <!--[if IE 7]>
     <link rel="stylesheet" href="{$THEME}/css/elusive-webfont-ie7.css">
     <script type="text/javascript" src="{$THEME}/js/lte-ie7.js"></script>
